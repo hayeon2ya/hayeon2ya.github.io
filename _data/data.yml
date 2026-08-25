@@ -147,28 +147,102 @@ publications:
   title: Featured Publications
   intro: |
     Selected high-impact publications from the full 2023-present publication record.
-
-    | Title | Journal | Date | Role | Impact factor |
-    |---|---:|---:|---|---:|
-    | Prenatal Exposure to Acid-Suppressive Medications and Risk of Neuropsychiatric Disorders in Children [Editor's Highlights] | JAMA | 2026 | Corresponding | 55 |
-    | Global, regional and national burden of ischemic heart disease attributable to suboptimal diet, 1990-2023: a Global Burden of Disease study [Editor's Highlights] | Nat Med | 2026 | First | 50 |
-    | Long-Term Autoimmune Inflammatory Rheumatic Outcomes of COVID-19: A Binational Cohort Study | Ann Intern Med | 2024 | Corresponding | 39.2 |
-    | Live zoster vaccination and cardiovascular outcomes: a nationwide, South Korean study [Editor's Highlights] | Eur Heart J | 2025 | Corresponding | 38.1 |
-    | Burden of Cardiovascular Outcomes After SARS-CoV-2 Infection in South Korea and Japan: A Binational Population-Based Cohort Study [Editor's Highlights] | Circulation | 2025 | Corresponding | 35.6 |
-    | Short- and long-term neuropsychiatric outcomes in long COVID in South Korea and Japan | Nat Hum Behav | 2024 | Corresponding | 29.9 |
-    | Acute and post-acute respiratory complications of SARS-CoV-2 infection: population-based cohort study in South Korea and Japan | Nat Commun | 2024 | Corresponding | 16.6 |
-    | Incident allergic diseases in post-COVID-19 condition: multinational cohort studies from South Korea, Japan and the UK | Nat Commun | 2024 | Corresponding | 16.6 |
-    | Long-term gastrointestinal and hepatobiliary outcomes of COVID-19: a multi-nationwide cohort study from South Korea, Japan, and the UK | Clin Mol Hepatol | 2024 | Corresponding | 14 |
-    | Risks of cutaneous immune-related adverse events in long COVID: Multinational cohort studies in South Korea, Japan, and the UK | J Med Virol | 2024 | Corresponding | 12.7 |
-    | Global estimates on the reports of vaccine-associated myocarditis and pericarditis from 1969 to 2023: Findings with critical reanalysis from the WHO pharmacovigilance database | J Med Virol | 2024 | First | 12.7 |
-    | Global and regional burden of vaccine-associated facial paralysis, 1967-2023: Findings from the WHO international pharmacovigilance database | J Med Virol | 2024 | Corresponding | 12.7 |
-    | Risks of alopecia areata in long COVID: Binational population-based cohort studies from South Korea and Japan | J Med Virol | 2024 | Corresponding | 12.7 |
-    | Global burden of vaccine-associated angioedema and their related vaccines, 1967-2023: Findings from the global pharmacovigilance database | Allergy | 2024 | Corresponding | 12.6 |
-    | Global burden of vaccine-associated anaphylaxis and their related vaccines, 1967-2023: A comprehensive analysis of the international pharmacovigilance database [Editor's Highlights] | Allergy | 2024 | First | 12.4 |
-    | Live Zoster Vaccination and the Reduced Risk of Chronic Respiratory Diseases: An Emulated Target Trial | Allergy | 2025 | Corresponding | 12 |
-    | Effectiveness of the live zoster vaccine in patients with type 2 diabetes: A nationwide emulated target trial | Clin Microbiol Infect | 2025 | Corresponding | 10.9 |
-    | Global burden of vaccine-associated alopecia, 1979-2023: a comprehensive analysis of the international pharmacovigilance database | Br J Dermatol | 2024 | Corresponding | 10.1 |
   papers:
+  - title: Prenatal Exposure to Acid-Suppressive Medications and Risk of Neuropsychiatric Disorders in Children
+    journal: JAMA
+    year: 2026
+    role: Corresponding
+    impact_factor: 55
+    note: Editor's Highlights
+  - title: "Global, regional and national burden of ischemic heart disease attributable to suboptimal diet, 1990-2023: a Global Burden of Disease study"
+    journal: Nat Med
+    year: 2026
+    role: First
+    impact_factor: 50
+    note: Editor's Highlights
+  - title: "Long-Term Autoimmune Inflammatory Rheumatic Outcomes of COVID-19: A Binational Cohort Study"
+    journal: Ann Intern Med
+    year: 2024
+    role: Corresponding
+    impact_factor: 39.2
+  - title: "Live zoster vaccination and cardiovascular outcomes: a nationwide, South Korean study"
+    journal: Eur Heart J
+    year: 2025
+    role: Corresponding
+    impact_factor: 38.1
+    note: Editor's Highlights
+  - title: "Burden of Cardiovascular Outcomes After SARS-CoV-2 Infection in South Korea and Japan: A Binational Population-Based Cohort Study"
+    journal: Circulation
+    year: 2025
+    role: Corresponding
+    impact_factor: 35.6
+    note: Editor's Highlights
+  - title: Short- and long-term neuropsychiatric outcomes in long COVID in South Korea and Japan
+    journal: Nat Hum Behav
+    year: 2024
+    role: Corresponding
+    impact_factor: 29.9
+  - title: "Acute and post-acute respiratory complications of SARS-CoV-2 infection: population-based cohort study in South Korea and Japan"
+    journal: Nat Commun
+    year: 2024
+    role: Corresponding
+    impact_factor: 16.6
+  - title: "Incident allergic diseases in post-COVID-19 condition: multinational cohort studies from South Korea, Japan and the UK"
+    journal: Nat Commun
+    year: 2024
+    role: Corresponding
+    impact_factor: 16.6
+  - title: "Long-term gastrointestinal and hepatobiliary outcomes of COVID-19: a multi-nationwide cohort study from South Korea, Japan, and the UK"
+    journal: Clin Mol Hepatol
+    year: 2024
+    role: Corresponding
+    impact_factor: 14
+  - title: "Risks of cutaneous immune-related adverse events in long COVID: Multinational cohort studies in South Korea, Japan, and the UK"
+    journal: J Med Virol
+    year: 2024
+    role: Corresponding
+    impact_factor: 12.7
+  - title: "Global estimates on the reports of vaccine-associated myocarditis and pericarditis from 1969 to 2023: Findings with critical reanalysis from the WHO pharmacovigilance database"
+    journal: J Med Virol
+    year: 2024
+    role: First
+    impact_factor: 12.7
+  - title: "Global and regional burden of vaccine-associated facial paralysis, 1967-2023: Findings from the WHO international pharmacovigilance database"
+    journal: J Med Virol
+    year: 2024
+    role: Corresponding
+    impact_factor: 12.7
+  - title: "Risks of alopecia areata in long COVID: Binational population-based cohort studies from South Korea and Japan"
+    journal: J Med Virol
+    year: 2024
+    role: Corresponding
+    impact_factor: 12.7
+  - title: "Global burden of vaccine-associated angioedema and their related vaccines, 1967-2023: Findings from the global pharmacovigilance database"
+    journal: Allergy
+    year: 2024
+    role: Corresponding
+    impact_factor: 12.6
+  - title: "Global burden of vaccine-associated anaphylaxis and their related vaccines, 1967-2023: A comprehensive analysis of the international pharmacovigilance database"
+    journal: Allergy
+    year: 2024
+    role: First
+    impact_factor: 12.4
+    note: Editor's Highlights
+  - title: "Live Zoster Vaccination and the Reduced Risk of Chronic Respiratory Diseases: An Emulated Target Trial"
+    journal: Allergy
+    year: 2025
+    role: Corresponding
+    impact_factor: 12
+  - title: "Effectiveness of the live zoster vaccine in patients with type 2 diabetes: A nationwide emulated target trial"
+    journal: Clin Microbiol Infect
+    year: 2025
+    role: Corresponding
+    impact_factor: 10.9
+  - title: "Global burden of vaccine-associated alopecia, 1979-2023: a comprehensive analysis of the international pharmacovigilance database"
+    journal: Br J Dermatol
+    year: 2024
+    role: Corresponding
+    impact_factor: 10.1
 
 recommendations:
   title: Referees

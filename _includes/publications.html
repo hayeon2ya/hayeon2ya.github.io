@@ -17,15 +17,22 @@
   {% endif %}
 
   {% for publication in publications.papers %}
-  <div class="item">
+  <article class="item publication-item">
     {% if publication.link %}
-      <li><a href="{{ publication.link }}">{{ publication.title }}</a></li>
+      <h3 class="publication-title"><a href="{{ publication.link }}">{{ publication.title }}</a></h3>
     {% else %}
-      <li>{{ publication.title }}</li>
+      <h3 class="publication-title">{{ publication.title }}</h3>
     {% endif %}
-    <div class="publication-authors">{{ publication.authors }}</div>
-    <div class="publication-conference">{{ publication.conference }}</div>
-  </div><!--//item-->
+    <div class="publication-meta">
+      {% if publication.journal %}<span>{{ publication.journal }}</span>{% endif %}
+      {% if publication.year %}<span>{{ publication.year }}</span>{% endif %}
+      {% if publication.role %}<span>{{ publication.role }}</span>{% endif %}
+      {% if publication.impact_factor %}<span>IF {{ publication.impact_factor }}</span>{% endif %}
+    </div>
+    {% if publication.note %}
+    <div class="publication-note">{{ publication.note }}</div>
+    {% endif %}
+  </article><!--//item-->
   {% endfor %}
 
 </section><!--//section-->
