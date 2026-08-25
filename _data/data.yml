@@ -53,19 +53,11 @@ sidebar:
       link:
 
 career-profile:
-  title: Curriculum Vitae
+  title: About
   summary: |
-    **Hayeon Lee, PhD candidate**  
-    Last updated: July 14, 2026
+    I am a PhD candidate at Kyung Hee University working at the intersection of digital health, medical informatics, medical AI, biomedical engineering, and mathematical modelling. My research focuses on using large-scale health data and computational methods to understand disease burden, treatment outcomes, and population-level health risks.
 
-    Major: Digital Health; Medical Informatics; Medical AI; Biomedical Engineering; Mathematical Modelling.
-
-    **Affiliations**
-
-    - Department of Biomedical Engineering, Kyung Hee University College of Electronics and Information
-    - Department of Electronics and Information Convergence Engineering, Kyung Hee University
-    - Center for Digital Health, Medical Science Research Institute, Kyung Hee University
-    - Kyung Hee University Medical Center, 23 Kyungheedae-ro, Dongdaemun-gu, Seoul, 02447, South Korea
+    I enjoy working across clinical, epidemiological, and engineering perspectives, and I value research that is rigorous, collaborative, and useful beyond a single discipline. Outside research, I play piano and drums, practice yoga, and enjoy watching Formula 1.
 
 education:
   title: Education

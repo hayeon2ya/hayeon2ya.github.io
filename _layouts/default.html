@@ -10,17 +10,10 @@
 
 <body>
   <nav class="site-nav d-print-none">
+    <a href="{{ site.baseurl }}/" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
     <a href="{{ site.baseurl }}/cv.pdf">CV</a>
     <a href="{{ site.baseurl }}/publications/" {% if page.url == "/publications/" %}class="active"{% endif %}>Publications</a>
   </nav>
-
-  <button onclick="print()" class="print-button d-print-none">
-    Print
-  </button>
-
-  <button onclick="generatePDF()" class="pdf-button d-print-none" id="pdfButton">
-    PDF
-  </button>
 
   <div class="wrapper">
     {% include sidebar.html %}
@@ -33,7 +26,6 @@
   {% include footer.html %}
 
   {% include scripts.html %}
-  <script src="{{ site.baseurl }}/assets/js/pdf-generator.js"></script>
 </body>
 
 </html>
