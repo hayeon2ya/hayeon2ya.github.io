@@ -144,9 +144,9 @@ projects:
 oss:
 
 publications:
-  title: Featured Publications
+  title: Publications
   intro: |
-    Selected high-impact publications from the full 2023-present publication record.
+    High-impact publications from the 2023-present publication record.
   papers:
   - title: Prenatal Exposure to Acid-Suppressive Medications and Risk of Neuropsychiatric Disorders in Children
     journal: JAMA

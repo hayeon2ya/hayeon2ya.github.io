@@ -9,6 +9,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.site-nav {
+  max-width: 1000px;
+  margin: 0 auto 14px;
+  text-align: right;
+
+  a {
+    color: $text-color-secondary;
+    display: inline-block;
+    font-weight: 600;
+    margin-left: 8px;
+    padding: 7px 12px;
+    text-decoration: none;
+
+    &:hover,
+    &.active {
+      color: $theme-color;
+      text-decoration: none;
+    }
+  }
+}
+
 h1,
 h2,
 h3,
@@ -266,6 +287,10 @@ p {
     color: darken($theme-color, 10%);
     font-size: 13px;
     margin-top: 4px;
+  }
+  .publication-more {
+    font-weight: 600;
+    margin-top: 8px;
   }
   .publications-section {
     .intro {

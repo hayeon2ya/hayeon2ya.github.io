@@ -7,7 +7,7 @@
       <i class="fas fa-circle fa-stack-2x"></i>
       <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
     </span>
-    {{ publications.title }}
+    {% if include.title %}{{ include.title }}{% else %}{{ publications.title }}{% endif %}
   </h2>
 
   {% if publications.intro %}
@@ -16,7 +16,27 @@
   </div><!--//intro-->
   {% endif %}
 
-  {% for publication in publications.papers %}
+  {% if include.limit %}
+    {% for publication in publications.papers limit: include.limit %}
+    <article class="item publication-item">
+      {% if publication.link %}
+        <h3 class="publication-title"><a href="{{ publication.link }}">{{ publication.title }}</a></h3>
+      {% else %}
+        <h3 class="publication-title">{{ publication.title }}</h3>
+      {% endif %}
+      <div class="publication-meta">
+        {% if publication.journal %}<span>{{ publication.journal }}</span>{% endif %}
+        {% if publication.year %}<span>{{ publication.year }}</span>{% endif %}
+        {% if publication.role %}<span>{{ publication.role }}</span>{% endif %}
+        {% if publication.impact_factor %}<span>IF {{ publication.impact_factor }}</span>{% endif %}
+      </div>
+      {% if publication.note %}
+      <div class="publication-note">{{ publication.note }}</div>
+      {% endif %}
+    </article><!--//item-->
+    {% endfor %}
+  {% else %}
+    {% for publication in publications.papers %}
   <article class="item publication-item">
     {% if publication.link %}
       <h3 class="publication-title"><a href="{{ publication.link }}">{{ publication.title }}</a></h3>
@@ -33,7 +53,14 @@
     <div class="publication-note">{{ publication.note }}</div>
     {% endif %}
   </article><!--//item-->
-  {% endfor %}
+    {% endfor %}
+  {% endif %}
+
+  {% if include.limit %}
+  <p class="publication-more">
+    <a href="{{ site.baseurl }}/publications/">View full publication list</a>
+  </p>
+  {% endif %}
 
 </section><!--//section-->
 {% endif %}
