@@ -5,7 +5,7 @@ title: My Resume
 url: 'https://ihayeon2ya-code.github.io'
 
 #change it according to your repository name
-baseurl: '/online-cv'
+baseurl: ''
 
 description: A beautiful Jekyll theme for creating resume
 # Style will be applied only after restarting the build or serve. Just choose one of the options.
