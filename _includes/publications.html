@@ -1,5 +1,10 @@
 {% assign publications = site.data.data.publications %}
 {% if publications %}
+{% if include.source == "full" %}
+  {% assign publication_list = site.data.publications %}
+{% else %}
+  {% assign publication_list = publications.papers %}
+{% endif %}
 <section class="section publications-section">
 
   <h2 class="section-title">
@@ -17,40 +22,70 @@
   {% endif %}
 
   {% if include.limit %}
-    {% for publication in publications.papers limit: include.limit %}
+    {% for publication in publication_list limit: include.limit %}
+    {% if publication.title %}
+      {% assign title = publication.title %}
+      {% assign journal = publication.journal %}
+      {% assign year = publication.year %}
+      {% assign role = publication.role %}
+      {% assign impact_factor = publication.impact_factor %}
+      {% assign note = publication.note %}
+    {% else %}
+      {% assign title = publication[0] %}
+      {% assign journal = publication[1] %}
+      {% assign year = publication[2] %}
+      {% assign role = publication[3] %}
+      {% assign impact_factor = publication[4] %}
+      {% assign note = publication[5] %}
+    {% endif %}
     <article class="item publication-item">
       {% if publication.link %}
-        <h3 class="publication-title"><a href="{{ publication.link }}">{{ publication.title }}</a></h3>
+        <h3 class="publication-title"><a href="{{ publication.link }}">{{ title }}</a></h3>
       {% else %}
-        <h3 class="publication-title">{{ publication.title }}</h3>
+        <h3 class="publication-title">{{ title }}</h3>
       {% endif %}
       <div class="publication-meta">
-        {% if publication.journal %}<span>{{ publication.journal }}</span>{% endif %}
-        {% if publication.year %}<span>{{ publication.year }}</span>{% endif %}
-        {% if publication.role %}<span>{{ publication.role }}</span>{% endif %}
-        {% if publication.impact_factor %}<span>IF {{ publication.impact_factor }}</span>{% endif %}
+        {% if journal %}<span>{{ journal }}</span>{% endif %}
+        {% if year %}<span>{{ year }}</span>{% endif %}
+        {% if role %}<span>{{ role }}</span>{% endif %}
+        {% if impact_factor %}<span>IF {{ impact_factor }}</span>{% endif %}
       </div>
-      {% if publication.note %}
-      <div class="publication-note">{{ publication.note }}</div>
+      {% if note %}
+      <div class="publication-note">{{ note }}</div>
       {% endif %}
     </article><!--//item-->
     {% endfor %}
   {% else %}
-    {% for publication in publications.papers %}
+    {% for publication in publication_list %}
+    {% if publication.title %}
+      {% assign title = publication.title %}
+      {% assign journal = publication.journal %}
+      {% assign year = publication.year %}
+      {% assign role = publication.role %}
+      {% assign impact_factor = publication.impact_factor %}
+      {% assign note = publication.note %}
+    {% else %}
+      {% assign title = publication[0] %}
+      {% assign journal = publication[1] %}
+      {% assign year = publication[2] %}
+      {% assign role = publication[3] %}
+      {% assign impact_factor = publication[4] %}
+      {% assign note = publication[5] %}
+    {% endif %}
   <article class="item publication-item">
     {% if publication.link %}
-      <h3 class="publication-title"><a href="{{ publication.link }}">{{ publication.title }}</a></h3>
+      <h3 class="publication-title"><a href="{{ publication.link }}">{{ title }}</a></h3>
     {% else %}
-      <h3 class="publication-title">{{ publication.title }}</h3>
+      <h3 class="publication-title">{{ title }}</h3>
     {% endif %}
     <div class="publication-meta">
-      {% if publication.journal %}<span>{{ publication.journal }}</span>{% endif %}
-      {% if publication.year %}<span>{{ publication.year }}</span>{% endif %}
-      {% if publication.role %}<span>{{ publication.role }}</span>{% endif %}
-      {% if publication.impact_factor %}<span>IF {{ publication.impact_factor }}</span>{% endif %}
+      {% if journal %}<span>{{ journal }}</span>{% endif %}
+      {% if year %}<span>{{ year }}</span>{% endif %}
+      {% if role %}<span>{{ role }}</span>{% endif %}
+      {% if impact_factor %}<span>IF {{ impact_factor }}</span>{% endif %}
     </div>
-    {% if publication.note %}
-    <div class="publication-note">{{ publication.note }}</div>
+    {% if note %}
+    <div class="publication-note">{{ note }}</div>
     {% endif %}
   </article><!--//item-->
     {% endfor %}
