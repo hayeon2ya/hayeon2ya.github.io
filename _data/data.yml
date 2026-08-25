@@ -13,12 +13,14 @@ sidebar:
 
   email: wwhy28@khu.ac.kr
   phone:
-  timezone: Asia/Seoul
+  timezone:
   citizenship: South Korea
-  website: https://ihayeon2ya-code.github.io/
-  linkedin:
+  website:
+  orcid: https://orcid.org/0009-0000-2403-6241
+  google_scholar: https://scholar.google.com/citations?user=4Z_lQYMAAAAJ&hl=en
+  linkedin: https://www.linkedin.com/in/hayeon-lee-04bb25378/
   xing:
-  github: ihayeon2ya-code
+  github:
   telegram:
   gitlab:
   bitbucket:

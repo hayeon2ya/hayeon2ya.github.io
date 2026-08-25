@@ -38,8 +38,27 @@
     {% endif %}
 
     {% if sidebar.linkedin %}
+    {% if sidebar.linkedin contains '://' %}
+    {% assign linkedin_url = sidebar.linkedin %}
+    {% assign linkedin_label = 'LinkedIn' %}
+    {% else %}
+    {% assign linkedin_url = 'https://linkedin.com/in/' | append: sidebar.linkedin %}
+    {% assign linkedin_label = sidebar.linkedin %}
+    {% endif %}
     <li class="linkedin"><i class="fab fa-linkedin"></i>
-      <a href="https://linkedin.com/in/{{ sidebar.linkedin }}" target="_blank">{{ sidebar.linkedin }}</a>
+      <a href="{{ linkedin_url }}" target="_blank">{{ linkedin_label }}</a>
+    </li>
+    {% endif %}
+
+    {% if sidebar.orcid %}
+    <li class="orcid"><i class="fab fa-orcid"></i>
+      <a href="{{ sidebar.orcid }}" target="_blank">ORCID</a>
+    </li>
+    {% endif %}
+
+    {% if sidebar.google_scholar %}
+    <li class="google-scholar"><i class="fab fa-google-scholar"></i>
+      <a href="{{ sidebar.google_scholar }}" target="_blank">Google Scholar</a>
     </li>
     {% endif %}
 
