@@ -1,286 +1,195 @@
 #
-# Be aware that even a small syntax error here can lead to failures in output.
+# CV data for Hayeon Lee.
 #
 
 sidebar:
-  position: right # position of the sidebar : left or right
-  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-  education: True # set to False if you want education in main section instead of in sidebar
+  position: right
+  about: False
+  education: True
 
-  # Profile information
-  name: Alan Doe
-  tagline: Full Stack Developer
-  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  name: Hayeon Lee
+  tagline: PhD Candidate
+  avatar:
 
-  # Sidebar links
-  email: example@email.com
-  phone: 012 345 6789
-  timezone: America/Cancun # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
-  citizenship:
-  website: https://example.com/ # Include the full website URL, including "http://" or "https://".
-  linkedin: alandoe
-  xing: alandoe
-  github: jekyll
-  telegram: # add your nickname without '@' sign
+  email: wwhy28@khu.ac.kr
+  phone:
+  timezone: Asia/Seoul
+  citizenship: South Korea
+  website: https://ihayeon2ya-code.github.io/
+  linkedin:
+  xing:
+  github: ihayeon2ya-code
+  telegram:
   gitlab:
   bitbucket:
-  bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
-  twitter: '@jekyllrb'
-  stack-overflow: # Number/Username, e.g. 123456/alandoe
+  bluesky:
+  twitter:
+  stack-overflow:
   codewars:
-  goodreads: # Number-Username, e.g. 123456-alandoe
-  mastodon: # Please include your full Mastodon link here.
-  hackerrank: # Please provide your HackerRank username.
-  leetcode: # Please provide your LeetCode username.
-  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
+  goodreads:
+  mastodon:
+  hackerrank:
+  leetcode:
+  pdf:
 
   languages:
-    title: Languages
+    title:
     info:
-    - idiom: English
-      level: Native
-
-    - idiom: French
-      level: Professional
-
-    - idiom: Spanish
-      level: Professional
 
   interests:
-    title: Interests
+    title: Major
     info:
-    - item: Climbing
+    - item: Digital Health
       link:
-
-
-    - item: Snowboarding
+    - item: Medical Informatics
       link:
-
-
-    - item: Cooking
+    - item: Medical AI
       link:
-
+    - item: Biomedical Engineering
+      link:
+    - item: Mathematical Modelling
+      link:
 
 career-profile:
-  title: Career Profile
+  title: Curriculum Vitae
   summary: |
-    Summarise your career here lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. You can [download this free resume/CV template here]().
-    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    Donec quam felis, ultricies nec, pellentesque eu.
-    Second paragraph if required.
+    **Hayeon Lee, PhD candidate**  
+    Last updated: July 14, 2026
+
+    Major: Digital Health; Medical Informatics; Medical AI; Biomedical Engineering; Mathematical Modelling.
+
+    **Affiliations**
+
+    - Department of Biomedical Engineering, Kyung Hee University College of Electronics and Information
+    - Department of Electronics and Information Convergence Engineering, Kyung Hee University
+    - Center for Digital Health, Medical Science Research Institute, Kyung Hee University
+    - Kyung Hee University Medical Center, 23 Kyungheedae-ro, Dongdaemun-gu, Seoul, 02447, South Korea
+
 education:
   title: Education
   info:
-  - degree: MSc in Computer Science
-    university: University of London
-    time: 2011 - 2012
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - degree: BSc in Applied Mathematics
-    university: Bristol University
-    time: 2007 - 2011
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
+  - degree: PhD Course in Electronics and Information Convergence Engineering
+    university: Kyung Hee University, South Korea
+    time: Present
+    details:
+  - degree: MS in Biomedical Engineering
+    university: Kyung Hee University College of Electronics and Information, South Korea
+    time: 2024
+    details:
+  - degree: BS in Biomedical Engineering
+    university: Kyung Hee University College of Electronics and Information, South Korea
+    time: 2022
+    details:
 
 experiences:
-  title: Experiences
+  title: Awards and Honors
   info:
-  - role: Lead Developer
-    time: 2015 - Present
-    company: Startup Hubs, San Francisco
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-      error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      architecto beatae vitae dicta sunt explicabo.
-        - Bullet point
-        - Bullet point
-  - role: Senior Software Engineer
-    time: 2014 - 2015
-    company: Google, London
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - role: UI Developer
-    time: 2012 - 2014
-    company: Amazon, London
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
+  - role: Research Fellow
+    time: 2025 - 2026
+    company: New York University
+    details:
+  - role: Presidential Science Scholarship for Graduate Students
+    time: 2025
+    company: Ministry of Science and ICT (MSIT) and Korea Scholarship Foundation
+    details:
+  - role: Kyung Hee Honor Young Scholar Society
+    time: 2025
+    company: Kyung Hee University, Korea
+    details:
+  - role: Samil Scholarships
+    time: 2025
+    company: The Samil Foundation
+    details:
+  - role: Korea Talent Award
+    time: 2024
+    company: Awarded by the Deputy Prime Minister and Minister of Education, Republic of Korea
+    details:
+  - role: EAACI Congress Award
+    time: 2024
+    company: European Academy of Allergy and Clinical Immunology
+    details:
+  - role: President of the Korea Society of Medical Informatics Award
+    time: 2024
+    company: The Korean Society of Medical Informatics
+    details:
+  - role: Samil Scholarships
+    time: 2024
+    company: The Samil Foundation
+    details:
+  - role: International Participants Award
+    time: 2024
+    company: The 83rd Conference of Japanese Society of Public Health
+    details:
+  - role: Best Oral Presentation Award
+    time: 2024
+    company: The 31st Conference of Korean Association of Basic Medical Scientists
+    details:
+  - role: Best Oral Presentation Award
+    time: 2024
+    company: The 5th Kohwang Scholar Academic Festival, Kyung Hee University
+    details:
+  - role: Outstanding Master's Thesis Award
+    time: 2024
+    company: Kyung Hee University
+    details:
+  - role: Health Research Fellowship
+    time: 2023
+    company: Health Fellowship Foundation, Korea
+    details:
 
 certifications:
-  title: Certifications
-  list:
-  - name: CV Builder
-    start: 2020
-    end: 2021
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.google.com
-    credentialname: Google
-    details: |
-      Details about cert. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
-
-      Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-      fringilla vel. Ut euismod, sem sed vulputate venenatis,
-      justo diam viverra velit, sed rhoncus leo leo eu justo.
-      Suspendisse placerat risus ante, sed porta nisi blandit at.
-  - name: Git learning
-    start: 2019
-    end:
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.github.com
-    credentialname: Github
-    details: |
-      Older certification. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
 
 projects:
-  title: Projects
-  intro: >
-    You can list your side projects in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-  assignments:
-  - title: Velocity
-    link: "#hook"
-    tagline: "A responsive website template designed to help startups promote, market and sell their products."
-
-  - title: DevStudio
-    link: "#"
-    tagline: "A responsive website template designed to help web developers/designers market their services."
-
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
 oss:
-  title: OSS Contributions
-  intro: >
-    You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-  contributions:
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
 publications:
-  title: Publications
+  title: Featured Publications
   intro: |
-    You can list your publications in this section. Lorem ipsum dolor sit
-    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-    bibendum fringilla a eu lectus.
+    Selected high-impact publications from the full 2023-present publication record.
+
+    | Title | Journal | Date | Role | Impact factor |
+    |---|---:|---:|---|---:|
+    | Prenatal Exposure to Acid-Suppressive Medications and Risk of Neuropsychiatric Disorders in Children [Editor's Highlights] | JAMA | 2026 | Corresponding | 55 |
+    | Global, regional and national burden of ischemic heart disease attributable to suboptimal diet, 1990-2023: a Global Burden of Disease study [Editor's Highlights] | Nat Med | 2026 | First | 50 |
+    | Long-Term Autoimmune Inflammatory Rheumatic Outcomes of COVID-19: A Binational Cohort Study | Ann Intern Med | 2024 | Corresponding | 39.2 |
+    | Live zoster vaccination and cardiovascular outcomes: a nationwide, South Korean study [Editor's Highlights] | Eur Heart J | 2025 | Corresponding | 38.1 |
+    | Burden of Cardiovascular Outcomes After SARS-CoV-2 Infection in South Korea and Japan: A Binational Population-Based Cohort Study [Editor's Highlights] | Circulation | 2025 | Corresponding | 35.6 |
+    | Short- and long-term neuropsychiatric outcomes in long COVID in South Korea and Japan | Nat Hum Behav | 2024 | Corresponding | 29.9 |
+    | Acute and post-acute respiratory complications of SARS-CoV-2 infection: population-based cohort study in South Korea and Japan | Nat Commun | 2024 | Corresponding | 16.6 |
+    | Incident allergic diseases in post-COVID-19 condition: multinational cohort studies from South Korea, Japan and the UK | Nat Commun | 2024 | Corresponding | 16.6 |
+    | Long-term gastrointestinal and hepatobiliary outcomes of COVID-19: a multi-nationwide cohort study from South Korea, Japan, and the UK | Clin Mol Hepatol | 2024 | Corresponding | 14 |
+    | Risks of cutaneous immune-related adverse events in long COVID: Multinational cohort studies in South Korea, Japan, and the UK | J Med Virol | 2024 | Corresponding | 12.7 |
+    | Global estimates on the reports of vaccine-associated myocarditis and pericarditis from 1969 to 2023: Findings with critical reanalysis from the WHO pharmacovigilance database | J Med Virol | 2024 | First | 12.7 |
+    | Global and regional burden of vaccine-associated facial paralysis, 1967-2023: Findings from the WHO international pharmacovigilance database | J Med Virol | 2024 | Corresponding | 12.7 |
+    | Risks of alopecia areata in long COVID: Binational population-based cohort studies from South Korea and Japan | J Med Virol | 2024 | Corresponding | 12.7 |
+    | Global burden of vaccine-associated angioedema and their related vaccines, 1967-2023: Findings from the global pharmacovigilance database | Allergy | 2024 | Corresponding | 12.6 |
+    | Global burden of vaccine-associated anaphylaxis and their related vaccines, 1967-2023: A comprehensive analysis of the international pharmacovigilance database [Editor's Highlights] | Allergy | 2024 | First | 12.4 |
+    | Live Zoster Vaccination and the Reduced Risk of Chronic Respiratory Diseases: An Emulated Target Trial | Allergy | 2025 | Corresponding | 12 |
+    | Effectiveness of the live zoster vaccine in patients with type 2 diabetes: A nationwide emulated target trial | Clin Microbiol Infect | 2025 | Corresponding | 10.9 |
+    | Global burden of vaccine-associated alopecia, 1979-2023: a comprehensive analysis of the international pharmacovigilance database | Br J Dermatol | 2024 | Corresponding | 10.1 |
   papers:
-  - title: The Art of Computer Programming
-    link: "#"
-    authors: Donald E. Knuth
-    conference: Addison-Wesley, 1968
-
-  - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-    link: "#"
-    authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-    conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-  - title: A syntax directed compiler for Algol 60
-    link: "#"
-    authors: Edgar T. Irons
-    conference: "Comm. ACM 4 (1961), 51–55"
 
 recommendations:
-  title: Recommendations
+  title: Referees
   list:
-  - person: Yareli Perez
-    email: perezyareli@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
+  - person: Jinseok Lee, PhD
+    email: gonasago@khu.ac.kr
+    phone:
+    role: Professor and PhD Supervisor, Department of Biomedical Engineering, Kyung Hee University
     recommendation: |
-      Alan Doe is a super employee!
-  - person: Lara Henderson
-    email: larah@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
+      Department of Biomedical Engineering, Kyung Hee University, 1732 Deogyeong-daero, Giheung-gu, Yongin 17104, South Korea.
+  - person: Jae Myung Cha, MD, PhD
+    email: clicknox@hanmail.net
+    phone:
+    role: Vice President, Kyung Hee University Hospital at Gangdong
     recommendation: |
-      I would like to work with Alan Doe again!
-
-      He is a great employee!
+      Division of Gastroenterology, Department of Internal Medicine, Kyung Hee University Hospital at Gangdong, School of Medicine, Kyung Hee University, Seoul 05278, Republic of Korea.
+  - person: Young Chan Lee, MD, PhD
+    email: medchan@khu.ac.kr
+    phone:
+    role: Director, Center for Medical Big Data, Kyung Hee University Hospital at Gangdong
+    recommendation: |
+      Department of Otolaryngology-Head and Neck Surgery, Kyung Hee University School of Medicine, Kyung Hee University Hospital at Gangdong, Seoul 05278, Republic of Korea.
 
 skills:
-  title: Skills &amp; Proficiency
-
-  toolset:
-  - name: Python & Django
-    level: 98%
-
-  - name: Javascript & jQuery
-    level: 98%
-
-  - name: Angular
-    level: 98%
-
-  - name: HTML5 & CSS
-    level: 95%
-
-  - name: Ruby on Rails
-    level: 85%
-
-  - name: Sketch & Photoshop
-    level: 60%
-
-footer: >
-  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
