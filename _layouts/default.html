@@ -10,16 +10,16 @@
 
 <body>
   <nav class="site-nav d-print-none">
-    <a href="{{ site.baseurl }}/" {% if page.url == "/" %}class="active"{% endif %}>CV</a>
+    <a href="{{ site.baseurl }}/cv.pdf">CV</a>
     <a href="{{ site.baseurl }}/publications/" {% if page.url == "/publications/" %}class="active"{% endif %}>Publications</a>
   </nav>
 
   <button onclick="print()" class="print-button d-print-none">
-    <i class="fas fa-file-pdf"></i>Print
+    Print
   </button>
 
   <button onclick="generatePDF()" class="pdf-button d-print-none" id="pdfButton">
-    <i class="fas fa-file-pdf"></i>PDF
+    PDF
   </button>
 
   <div class="wrapper">
