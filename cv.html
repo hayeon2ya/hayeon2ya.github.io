@@ -39,25 +39,32 @@ permalink: /cv/
   <iframe id="cv-frame" title="Hayeon Lee CV" hidden></iframe>
   <script>
     (function () {
-      var source = 'https://raw.githubusercontent.com/hayeon2ya/resume-template-anubhav/main/main.pdf?v=' + Date.now();
+      var latestCommit = 'https://api.github.com/repos/hayeon2ya/resume-template-anubhav/commits/main?v=' + Date.now();
+      var fallback = 'https://cdn.jsdelivr.net/gh/hayeon2ya/resume-template-anubhav@main/main.pdf?v=' + Date.now();
       var status = document.getElementById('status');
       var frame = document.getElementById('cv-frame');
 
-      fetch(source, { cache: 'no-store' })
+      function showPdf(url) {
+        frame.src = url;
+        frame.hidden = false;
+        status.hidden = true;
+      }
+
+      fetch(latestCommit, { cache: 'no-store' })
         .then(function (response) {
           if (!response.ok) {
-            throw new Error('Failed to load CV PDF.');
+            throw new Error('Failed to load latest CV commit.');
           }
-          return response.arrayBuffer();
+          return response.json();
         })
-        .then(function (buffer) {
-          var file = new Blob([buffer], { type: 'application/pdf' });
-          frame.src = URL.createObjectURL(file);
-          frame.hidden = false;
-          status.hidden = true;
+        .then(function (commit) {
+          if (!commit.sha) {
+            throw new Error('Missing CV commit SHA.');
+          }
+          showPdf('https://cdn.jsdelivr.net/gh/hayeon2ya/resume-template-anubhav@' + commit.sha + '/main.pdf');
         })
         .catch(function () {
-          status.textContent = 'Unable to load CV PDF. Please refresh this page.';
+          showPdf(fallback);
         });
     }());
   </script>
