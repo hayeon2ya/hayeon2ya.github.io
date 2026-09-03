@@ -11,7 +11,7 @@
 <body>
   <nav class="site-nav d-print-none">
     <a href="{{ site.baseurl }}/" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
-    <a id="cv-pdf-link" href="https://raw.githubusercontent.com/hayeon2ya/resume-template-anubhav/main/main.pdf?v={{ site.time | date: '%s' }}">CV</a>
+    <a id="cv-pdf-link" href="https://cdn.jsdelivr.net/gh/hayeon2ya/resume-template-anubhav@main/main.pdf?v={{ site.time | date: '%s' }}">CV</a>
     <a href="{{ site.baseurl }}/publications/" {% if page.url == "/publications/" %}class="active"{% endif %}>Publications</a>
   </nav>
 
@@ -28,7 +28,7 @@
   {% include scripts.html %}
   <script>
     document.getElementById('cv-pdf-link').addEventListener('click', function (event) {
-      event.currentTarget.href = 'https://raw.githubusercontent.com/hayeon2ya/resume-template-anubhav/main/main.pdf?v=' + Date.now();
+      event.currentTarget.href = 'https://cdn.jsdelivr.net/gh/hayeon2ya/resume-template-anubhav@main/main.pdf?v=' + Date.now();
     });
   </script>
 </body>
