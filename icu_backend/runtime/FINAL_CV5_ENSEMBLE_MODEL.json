@@ -1,0 +1,179 @@
+{
+  "format": "phase5_timeaware_cv5_maxF1_v1",
+  "n_folds": 5,
+  "primary_fold_checkpoints": [
+    "gpu_outputs_phase5_weighted_gradual_finetune/cv5_maxf1/fold_1/primary_best.pt",
+    "gpu_outputs_phase5_weighted_gradual_finetune/cv5_maxf1/fold_2/primary_best.pt",
+    "gpu_outputs_phase5_weighted_gradual_finetune/cv5_maxf1/fold_3/primary_best.pt",
+    "gpu_outputs_phase5_weighted_gradual_finetune/cv5_maxf1/fold_4/primary_best.pt",
+    "gpu_outputs_phase5_weighted_gradual_finetune/cv5_maxf1/fold_5/primary_best.pt"
+  ],
+  "transition_fold_checkpoints": [
+    "gpu_outputs_phase5_weighted_gradual_finetune/cv5_maxf1/fold_1/transition_best.pt",
+    "gpu_outputs_phase5_weighted_gradual_finetune/cv5_maxf1/fold_2/transition_best.pt",
+    "gpu_outputs_phase5_weighted_gradual_finetune/cv5_maxf1/fold_3/transition_best.pt",
+    "gpu_outputs_phase5_weighted_gradual_finetune/cv5_maxf1/fold_4/transition_best.pt",
+    "gpu_outputs_phase5_weighted_gradual_finetune/cv5_maxf1/fold_5/transition_best.pt"
+  ],
+  "primary_thresholds": {
+    "aki_3h": 0.2265625,
+    "aki_12h": 0.255859375,
+    "aki_24h": 0.2578125,
+    "aki_48h": 0.248046875,
+    "aki_72h": 0.25390625,
+    "arf_3h": 0.1728515625,
+    "arf_12h": 0.1494140625,
+    "arf_24h": 0.1337890625,
+    "arf_48h": 0.1484375,
+    "arf_72h": 0.1552734375,
+    "both_3h": 0.2451171875,
+    "both_12h": 0.283203125,
+    "both_24h": 0.302734375,
+    "both_48h": 0.3046875,
+    "both_72h": 0.310546875,
+    "death_3h": 0.1748046875,
+    "death_12h": 0.2333984375,
+    "death_24h": 0.291015625,
+    "death_48h": 0.2890625,
+    "death_72h": 0.279296875,
+    "discharge_3h": 0.11279296875,
+    "discharge_12h": 0.2451171875,
+    "discharge_24h": 0.314453125,
+    "discharge_48h": 0.359375,
+    "discharge_72h": 0.37890625
+  },
+  "transition_thresholds": {
+    "0_to_1": 0.83984375,
+    "0_to_2": 0.80078125,
+    "0_to_3": 0.5234375,
+    "0_to_4": 0.6640625,
+    "0_to_5": 0.69921875,
+    "1_to_3": 0.73046875,
+    "1_to_4": 0.75,
+    "1_to_5": 0.74609375,
+    "2_to_3": 0.875,
+    "2_to_4": 0.8125,
+    "2_to_5": 0.80859375,
+    "3_to_4": 0.83984375,
+    "3_to_5": 0.77734375
+  },
+  "primary_tasks": [
+    [
+      "aki",
+      3
+    ],
+    [
+      "aki",
+      12
+    ],
+    [
+      "aki",
+      24
+    ],
+    [
+      "aki",
+      48
+    ],
+    [
+      "aki",
+      72
+    ],
+    [
+      "arf",
+      3
+    ],
+    [
+      "arf",
+      12
+    ],
+    [
+      "arf",
+      24
+    ],
+    [
+      "arf",
+      48
+    ],
+    [
+      "arf",
+      72
+    ],
+    [
+      "both",
+      3
+    ],
+    [
+      "both",
+      12
+    ],
+    [
+      "both",
+      24
+    ],
+    [
+      "both",
+      48
+    ],
+    [
+      "both",
+      72
+    ],
+    [
+      "death",
+      3
+    ],
+    [
+      "death",
+      12
+    ],
+    [
+      "death",
+      24
+    ],
+    [
+      "death",
+      48
+    ],
+    [
+      "death",
+      72
+    ],
+    [
+      "discharge",
+      3
+    ],
+    [
+      "discharge",
+      12
+    ],
+    [
+      "discharge",
+      24
+    ],
+    [
+      "discharge",
+      48
+    ],
+    [
+      "discharge",
+      72
+    ]
+  ],
+  "transitions": [
+    "0_to_1",
+    "0_to_2",
+    "0_to_3",
+    "0_to_4",
+    "0_to_5",
+    "1_to_3",
+    "1_to_4",
+    "1_to_5",
+    "2_to_3",
+    "2_to_4",
+    "2_to_5",
+    "3_to_4",
+    "3_to_5"
+  ],
+  "test_prediction_rule": "mean_probability_across_5_subject_level_cv_models",
+  "threshold_selection": "maximum_F1_on_development_OOF_predictions"
+}

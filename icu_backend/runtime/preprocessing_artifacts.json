@@ -1,0 +1,1597 @@
+{
+  "numeric": [
+    "age",
+    "weight_num",
+    "cci",
+    "lm_last_bun",
+    "lm_last_creatinine",
+    "lm_last_dbp",
+    "lm_last_fio2",
+    "lm_last_hemoglobin",
+    "lm_last_hr",
+    "lm_last_lactate",
+    "lm_last_magnesium",
+    "lm_last_map",
+    "lm_last_paco2",
+    "lm_last_pao2",
+    "lm_last_ph",
+    "lm_last_platelet",
+    "lm_last_potassium",
+    "lm_last_resp_support",
+    "lm_last_rr",
+    "lm_last_sbp",
+    "lm_last_sodium",
+    "lm_last_spo2",
+    "lm_last_temperature",
+    "lm_last_urine_output",
+    "lm_last_wbc",
+    "lm_last_albumin",
+    "lm_last_crp",
+    "lm_median_bun",
+    "lm_median_creatinine",
+    "lm_median_dbp",
+    "lm_median_fio2",
+    "lm_median_hemoglobin",
+    "lm_median_hr",
+    "lm_median_lactate",
+    "lm_median_magnesium",
+    "lm_median_map",
+    "lm_median_paco2",
+    "lm_median_pao2",
+    "lm_median_ph",
+    "lm_median_platelet",
+    "lm_median_potassium",
+    "lm_median_resp_support",
+    "lm_median_rr",
+    "lm_median_sbp",
+    "lm_median_sodium",
+    "lm_median_spo2",
+    "lm_median_temperature",
+    "lm_median_urine_output",
+    "lm_median_wbc",
+    "lm_median_albumin",
+    "lm_median_crp",
+    "lm_min_bun",
+    "lm_min_creatinine",
+    "lm_min_dbp",
+    "lm_min_fio2",
+    "lm_min_hemoglobin",
+    "lm_min_hr",
+    "lm_min_lactate",
+    "lm_min_magnesium",
+    "lm_min_map",
+    "lm_min_paco2",
+    "lm_min_pao2",
+    "lm_min_ph",
+    "lm_min_platelet",
+    "lm_min_potassium",
+    "lm_min_resp_support",
+    "lm_min_rr",
+    "lm_min_sbp",
+    "lm_min_sodium",
+    "lm_min_spo2",
+    "lm_min_temperature",
+    "lm_min_urine_output",
+    "lm_min_wbc",
+    "lm_min_albumin",
+    "lm_min_crp",
+    "lm_max_bun",
+    "lm_max_creatinine",
+    "lm_max_dbp",
+    "lm_max_fio2",
+    "lm_max_hemoglobin",
+    "lm_max_hr",
+    "lm_max_lactate",
+    "lm_max_magnesium",
+    "lm_max_map",
+    "lm_max_paco2",
+    "lm_max_pao2",
+    "lm_max_ph",
+    "lm_max_platelet",
+    "lm_max_potassium",
+    "lm_max_resp_support",
+    "lm_max_rr",
+    "lm_max_sbp",
+    "lm_max_sodium",
+    "lm_max_spo2",
+    "lm_max_temperature",
+    "lm_max_urine_output",
+    "lm_max_wbc",
+    "lm_max_albumin",
+    "lm_max_crp",
+    "lm_n_bun",
+    "lm_n_creatinine",
+    "lm_n_dbp",
+    "lm_n_fio2",
+    "lm_n_hemoglobin",
+    "lm_n_hr",
+    "lm_n_lactate",
+    "lm_n_magnesium",
+    "lm_n_map",
+    "lm_n_paco2",
+    "lm_n_pao2",
+    "lm_n_ph",
+    "lm_n_platelet",
+    "lm_n_potassium",
+    "lm_n_resp_support",
+    "lm_n_rr",
+    "lm_n_sbp",
+    "lm_n_sodium",
+    "lm_n_spo2",
+    "lm_n_temperature",
+    "lm_n_urine_output",
+    "lm_n_wbc",
+    "lm_n_albumin",
+    "lm_n_crp",
+    "lm_recency_bun",
+    "lm_recency_creatinine",
+    "lm_recency_dbp",
+    "lm_recency_fio2",
+    "lm_recency_hemoglobin",
+    "lm_recency_hr",
+    "lm_recency_lactate",
+    "lm_recency_magnesium",
+    "lm_recency_map",
+    "lm_recency_paco2",
+    "lm_recency_pao2",
+    "lm_recency_ph",
+    "lm_recency_platelet",
+    "lm_recency_potassium",
+    "lm_recency_resp_support",
+    "lm_recency_rr",
+    "lm_recency_sbp",
+    "lm_recency_sodium",
+    "lm_recency_spo2",
+    "lm_recency_temperature",
+    "lm_recency_urine_output",
+    "lm_recency_wbc",
+    "lm_recency_albumin",
+    "lm_recency_crp",
+    "lm_urine_total_6h",
+    "lm_urine_ml_kg_h_6h",
+    "lm_dose_furosemide",
+    "lm_dose_phenyl",
+    "lm_dose_dopamine",
+    "lm_dose_magnesium",
+    "lm_dose_potassium",
+    "lm_dose_norepi",
+    "lm_dose_crrt",
+    "lm_dose_epi",
+    "lm_dose_vasopressin",
+    "lm_dose_albumin",
+    "lm_dose_dobutamine",
+    "lm_dose_bumetanide",
+    "lm_rate_furosemide",
+    "lm_rate_phenyl",
+    "lm_rate_dopamine",
+    "lm_rate_magnesium",
+    "lm_rate_potassium",
+    "lm_rate_norepi",
+    "lm_rate_crrt",
+    "lm_rate_epi",
+    "lm_rate_vasopressin",
+    "lm_rate_albumin",
+    "lm_rate_dobutamine",
+    "lm_rate_bumetanide"
+  ],
+  "binary": [
+    "hypertension",
+    "ischaemic_heart_disease",
+    "chronic_kidney_disease",
+    "heart_failure",
+    "copd",
+    "diabetes",
+    "chronic_liver_disease",
+    "malignancy",
+    "lm_any_furosemide",
+    "lm_any_phenyl",
+    "lm_any_dopamine",
+    "lm_any_magnesium",
+    "lm_any_potassium",
+    "lm_any_norepi",
+    "lm_any_crrt",
+    "lm_any_epi",
+    "lm_any_vasopressin",
+    "lm_any_albumin",
+    "lm_any_dobutamine",
+    "lm_any_bumetanide"
+  ],
+  "categorical": [
+    "language",
+    "insurance",
+    "marital_status",
+    "race",
+    "gender"
+  ],
+  "CONT": [
+    "age__missing",
+    "age",
+    "weight_num__missing",
+    "weight_num",
+    "cci__missing",
+    "cci",
+    "lm_last_bun__missing",
+    "lm_last_bun",
+    "lm_last_creatinine__missing",
+    "lm_last_creatinine",
+    "lm_last_dbp__missing",
+    "lm_last_dbp",
+    "lm_last_fio2__missing",
+    "lm_last_fio2",
+    "lm_last_hemoglobin__missing",
+    "lm_last_hemoglobin",
+    "lm_last_hr__missing",
+    "lm_last_hr",
+    "lm_last_lactate__missing",
+    "lm_last_lactate",
+    "lm_last_magnesium__missing",
+    "lm_last_magnesium",
+    "lm_last_map__missing",
+    "lm_last_map",
+    "lm_last_paco2__missing",
+    "lm_last_paco2",
+    "lm_last_pao2__missing",
+    "lm_last_pao2",
+    "lm_last_ph__missing",
+    "lm_last_ph",
+    "lm_last_platelet__missing",
+    "lm_last_platelet",
+    "lm_last_potassium__missing",
+    "lm_last_potassium",
+    "lm_last_resp_support__missing",
+    "lm_last_resp_support",
+    "lm_last_rr__missing",
+    "lm_last_rr",
+    "lm_last_sbp__missing",
+    "lm_last_sbp",
+    "lm_last_sodium__missing",
+    "lm_last_sodium",
+    "lm_last_spo2__missing",
+    "lm_last_spo2",
+    "lm_last_temperature__missing",
+    "lm_last_temperature",
+    "lm_last_urine_output__missing",
+    "lm_last_urine_output",
+    "lm_last_wbc__missing",
+    "lm_last_wbc",
+    "lm_last_albumin__missing",
+    "lm_last_albumin",
+    "lm_last_crp__missing",
+    "lm_last_crp",
+    "lm_median_bun__missing",
+    "lm_median_bun",
+    "lm_median_creatinine__missing",
+    "lm_median_creatinine",
+    "lm_median_dbp__missing",
+    "lm_median_dbp",
+    "lm_median_fio2__missing",
+    "lm_median_fio2",
+    "lm_median_hemoglobin__missing",
+    "lm_median_hemoglobin",
+    "lm_median_hr__missing",
+    "lm_median_hr",
+    "lm_median_lactate__missing",
+    "lm_median_lactate",
+    "lm_median_magnesium__missing",
+    "lm_median_magnesium",
+    "lm_median_map__missing",
+    "lm_median_map",
+    "lm_median_paco2__missing",
+    "lm_median_paco2",
+    "lm_median_pao2__missing",
+    "lm_median_pao2",
+    "lm_median_ph__missing",
+    "lm_median_ph",
+    "lm_median_platelet__missing",
+    "lm_median_platelet",
+    "lm_median_potassium__missing",
+    "lm_median_potassium",
+    "lm_median_resp_support__missing",
+    "lm_median_resp_support",
+    "lm_median_rr__missing",
+    "lm_median_rr",
+    "lm_median_sbp__missing",
+    "lm_median_sbp",
+    "lm_median_sodium__missing",
+    "lm_median_sodium",
+    "lm_median_spo2__missing",
+    "lm_median_spo2",
+    "lm_median_temperature__missing",
+    "lm_median_temperature",
+    "lm_median_urine_output__missing",
+    "lm_median_urine_output",
+    "lm_median_wbc__missing",
+    "lm_median_wbc",
+    "lm_median_albumin__missing",
+    "lm_median_albumin",
+    "lm_median_crp__missing",
+    "lm_median_crp",
+    "lm_min_bun__missing",
+    "lm_min_bun",
+    "lm_min_creatinine__missing",
+    "lm_min_creatinine",
+    "lm_min_dbp__missing",
+    "lm_min_dbp",
+    "lm_min_fio2__missing",
+    "lm_min_fio2",
+    "lm_min_hemoglobin__missing",
+    "lm_min_hemoglobin",
+    "lm_min_hr__missing",
+    "lm_min_hr",
+    "lm_min_lactate__missing",
+    "lm_min_lactate",
+    "lm_min_magnesium__missing",
+    "lm_min_magnesium",
+    "lm_min_map__missing",
+    "lm_min_map",
+    "lm_min_paco2__missing",
+    "lm_min_paco2",
+    "lm_min_pao2__missing",
+    "lm_min_pao2",
+    "lm_min_ph__missing",
+    "lm_min_ph",
+    "lm_min_platelet__missing",
+    "lm_min_platelet",
+    "lm_min_potassium__missing",
+    "lm_min_potassium",
+    "lm_min_resp_support__missing",
+    "lm_min_resp_support",
+    "lm_min_rr__missing",
+    "lm_min_rr",
+    "lm_min_sbp__missing",
+    "lm_min_sbp",
+    "lm_min_sodium__missing",
+    "lm_min_sodium",
+    "lm_min_spo2__missing",
+    "lm_min_spo2",
+    "lm_min_temperature__missing",
+    "lm_min_temperature",
+    "lm_min_urine_output__missing",
+    "lm_min_urine_output",
+    "lm_min_wbc__missing",
+    "lm_min_wbc",
+    "lm_min_albumin__missing",
+    "lm_min_albumin",
+    "lm_min_crp__missing",
+    "lm_min_crp",
+    "lm_max_bun__missing",
+    "lm_max_bun",
+    "lm_max_creatinine__missing",
+    "lm_max_creatinine",
+    "lm_max_dbp__missing",
+    "lm_max_dbp",
+    "lm_max_fio2__missing",
+    "lm_max_fio2",
+    "lm_max_hemoglobin__missing",
+    "lm_max_hemoglobin",
+    "lm_max_hr__missing",
+    "lm_max_hr",
+    "lm_max_lactate__missing",
+    "lm_max_lactate",
+    "lm_max_magnesium__missing",
+    "lm_max_magnesium",
+    "lm_max_map__missing",
+    "lm_max_map",
+    "lm_max_paco2__missing",
+    "lm_max_paco2",
+    "lm_max_pao2__missing",
+    "lm_max_pao2",
+    "lm_max_ph__missing",
+    "lm_max_ph",
+    "lm_max_platelet__missing",
+    "lm_max_platelet",
+    "lm_max_potassium__missing",
+    "lm_max_potassium",
+    "lm_max_resp_support__missing",
+    "lm_max_resp_support",
+    "lm_max_rr__missing",
+    "lm_max_rr",
+    "lm_max_sbp__missing",
+    "lm_max_sbp",
+    "lm_max_sodium__missing",
+    "lm_max_sodium",
+    "lm_max_spo2__missing",
+    "lm_max_spo2",
+    "lm_max_temperature__missing",
+    "lm_max_temperature",
+    "lm_max_urine_output__missing",
+    "lm_max_urine_output",
+    "lm_max_wbc__missing",
+    "lm_max_wbc",
+    "lm_max_albumin__missing",
+    "lm_max_albumin",
+    "lm_max_crp__missing",
+    "lm_max_crp",
+    "lm_n_bun__missing",
+    "lm_n_bun",
+    "lm_n_creatinine__missing",
+    "lm_n_creatinine",
+    "lm_n_dbp__missing",
+    "lm_n_dbp",
+    "lm_n_fio2__missing",
+    "lm_n_fio2",
+    "lm_n_hemoglobin__missing",
+    "lm_n_hemoglobin",
+    "lm_n_hr__missing",
+    "lm_n_hr",
+    "lm_n_lactate__missing",
+    "lm_n_lactate",
+    "lm_n_magnesium__missing",
+    "lm_n_magnesium",
+    "lm_n_map__missing",
+    "lm_n_map",
+    "lm_n_paco2__missing",
+    "lm_n_paco2",
+    "lm_n_pao2__missing",
+    "lm_n_pao2",
+    "lm_n_ph__missing",
+    "lm_n_ph",
+    "lm_n_platelet__missing",
+    "lm_n_platelet",
+    "lm_n_potassium__missing",
+    "lm_n_potassium",
+    "lm_n_resp_support__missing",
+    "lm_n_resp_support",
+    "lm_n_rr__missing",
+    "lm_n_rr",
+    "lm_n_sbp__missing",
+    "lm_n_sbp",
+    "lm_n_sodium__missing",
+    "lm_n_sodium",
+    "lm_n_spo2__missing",
+    "lm_n_spo2",
+    "lm_n_temperature__missing",
+    "lm_n_temperature",
+    "lm_n_urine_output__missing",
+    "lm_n_urine_output",
+    "lm_n_wbc__missing",
+    "lm_n_wbc",
+    "lm_n_albumin__missing",
+    "lm_n_albumin",
+    "lm_n_crp__missing",
+    "lm_n_crp",
+    "lm_recency_bun__missing",
+    "lm_recency_bun",
+    "lm_recency_creatinine__missing",
+    "lm_recency_creatinine",
+    "lm_recency_dbp__missing",
+    "lm_recency_dbp",
+    "lm_recency_fio2__missing",
+    "lm_recency_fio2",
+    "lm_recency_hemoglobin__missing",
+    "lm_recency_hemoglobin",
+    "lm_recency_hr__missing",
+    "lm_recency_hr",
+    "lm_recency_lactate__missing",
+    "lm_recency_lactate",
+    "lm_recency_magnesium__missing",
+    "lm_recency_magnesium",
+    "lm_recency_map__missing",
+    "lm_recency_map",
+    "lm_recency_paco2__missing",
+    "lm_recency_paco2",
+    "lm_recency_pao2__missing",
+    "lm_recency_pao2",
+    "lm_recency_ph__missing",
+    "lm_recency_ph",
+    "lm_recency_platelet__missing",
+    "lm_recency_platelet",
+    "lm_recency_potassium__missing",
+    "lm_recency_potassium",
+    "lm_recency_resp_support__missing",
+    "lm_recency_resp_support",
+    "lm_recency_rr__missing",
+    "lm_recency_rr",
+    "lm_recency_sbp__missing",
+    "lm_recency_sbp",
+    "lm_recency_sodium__missing",
+    "lm_recency_sodium",
+    "lm_recency_spo2__missing",
+    "lm_recency_spo2",
+    "lm_recency_temperature__missing",
+    "lm_recency_temperature",
+    "lm_recency_urine_output__missing",
+    "lm_recency_urine_output",
+    "lm_recency_wbc__missing",
+    "lm_recency_wbc",
+    "lm_recency_albumin__missing",
+    "lm_recency_albumin",
+    "lm_recency_crp__missing",
+    "lm_recency_crp",
+    "lm_urine_total_6h__missing",
+    "lm_urine_total_6h",
+    "lm_urine_ml_kg_h_6h__missing",
+    "lm_urine_ml_kg_h_6h",
+    "lm_dose_furosemide__missing",
+    "lm_dose_furosemide",
+    "lm_dose_phenyl__missing",
+    "lm_dose_phenyl",
+    "lm_dose_dopamine__missing",
+    "lm_dose_dopamine",
+    "lm_dose_magnesium__missing",
+    "lm_dose_magnesium",
+    "lm_dose_potassium__missing",
+    "lm_dose_potassium",
+    "lm_dose_norepi__missing",
+    "lm_dose_norepi",
+    "lm_dose_crrt__missing",
+    "lm_dose_crrt",
+    "lm_dose_epi__missing",
+    "lm_dose_epi",
+    "lm_dose_vasopressin__missing",
+    "lm_dose_vasopressin",
+    "lm_dose_albumin__missing",
+    "lm_dose_albumin",
+    "lm_dose_dobutamine__missing",
+    "lm_dose_dobutamine",
+    "lm_dose_bumetanide__missing",
+    "lm_dose_bumetanide",
+    "lm_rate_furosemide__missing",
+    "lm_rate_furosemide",
+    "lm_rate_phenyl__missing",
+    "lm_rate_phenyl",
+    "lm_rate_dopamine__missing",
+    "lm_rate_dopamine",
+    "lm_rate_magnesium__missing",
+    "lm_rate_magnesium",
+    "lm_rate_potassium__missing",
+    "lm_rate_potassium",
+    "lm_rate_norepi__missing",
+    "lm_rate_norepi",
+    "lm_rate_crrt__missing",
+    "lm_rate_crrt",
+    "lm_rate_epi__missing",
+    "lm_rate_epi",
+    "lm_rate_vasopressin__missing",
+    "lm_rate_vasopressin",
+    "lm_rate_albumin__missing",
+    "lm_rate_albumin",
+    "lm_rate_dobutamine__missing",
+    "lm_rate_dobutamine",
+    "lm_rate_bumetanide__missing",
+    "lm_rate_bumetanide",
+    "hypertension",
+    "ischaemic_heart_disease",
+    "chronic_kidney_disease",
+    "heart_failure",
+    "copd",
+    "diabetes",
+    "chronic_liver_disease",
+    "malignancy",
+    "lm_any_furosemide",
+    "lm_any_phenyl",
+    "lm_any_dopamine",
+    "lm_any_magnesium",
+    "lm_any_potassium",
+    "lm_any_norepi",
+    "lm_any_crrt",
+    "lm_any_epi",
+    "lm_any_vasopressin",
+    "lm_any_albumin",
+    "lm_any_dobutamine",
+    "lm_any_bumetanide"
+  ],
+  "CAT": [
+    "language_id",
+    "insurance_id",
+    "marital_status_id",
+    "race_id",
+    "gender_id"
+  ],
+  "numeric_stats": {
+    "age": {
+      "median": 66.0,
+      "iqr": 22.0
+    },
+    "weight_num": {
+      "median": 78.2,
+      "iqr": 27.299999999999997
+    },
+    "cci": {
+      "median": 2.0,
+      "iqr": 3.0
+    },
+    "lm_last_bun": {
+      "median": 6.783,
+      "iqr": 7.140000000000001
+    },
+    "lm_last_creatinine": {
+      "median": 88.4,
+      "iqr": 70.72
+    },
+    "lm_last_dbp": {
+      "median": 62.0,
+      "iqr": 18.0
+    },
+    "lm_last_fio2": {
+      "median": 50.0,
+      "iqr": 20.0
+    },
+    "lm_last_hemoglobin": {
+      "median": 106.0,
+      "iqr": 32.0
+    },
+    "lm_last_hr": {
+      "median": 83.0,
+      "iqr": 25.0
+    },
+    "lm_last_lactate": {
+      "median": 1.9,
+      "iqr": 1.4999999999999998
+    },
+    "lm_last_magnesium": {
+      "median": 0.78166,
+      "iqr": 0.2057
+    },
+    "lm_last_map": {
+      "median": 77.0,
+      "iqr": 20.0
+    },
+    "lm_last_paco2": {
+      "median": 40.0,
+      "iqr": 10.0
+    },
+    "lm_last_pao2": {
+      "median": 137.0,
+      "iqr": 114.0
+    },
+    "lm_last_ph": {
+      "median": 7.36,
+      "iqr": 0.10000000000000053
+    },
+    "lm_last_platelet": {
+      "median": 189.0,
+      "iqr": 119.0
+    },
+    "lm_last_potassium": {
+      "median": 4.1,
+      "iqr": 0.8999999999999995
+    },
+    "lm_last_resp_support": {
+      "median": 1.0,
+      "iqr": 4.0
+    },
+    "lm_last_rr": {
+      "median": 18.0,
+      "iqr": 7.0
+    },
+    "lm_last_sbp": {
+      "median": 115.0,
+      "iqr": 29.0
+    },
+    "lm_last_sodium": {
+      "median": 139.0,
+      "iqr": 5.0
+    },
+    "lm_last_spo2": {
+      "median": 97.0,
+      "iqr": 5.0
+    },
+    "lm_last_temperature": {
+      "median": 36.777777778,
+      "iqr": 0.5555555560000016
+    },
+    "lm_last_urine_output": {
+      "median": 120.0,
+      "iqr": 200.0
+    },
+    "lm_last_wbc": {
+      "median": 11.2,
+      "iqr": 7.799999999999999
+    },
+    "lm_last_albumin": {
+      "median": 32.0,
+      "iqr": 9.0
+    },
+    "lm_last_crp": {
+      "median": 56.1,
+      "iqr": 137.1
+    },
+    "lm_median_bun": {
+      "median": 6.783,
+      "iqr": 7.140000000000001
+    },
+    "lm_median_creatinine": {
+      "median": 88.4,
+      "iqr": 70.72
+    },
+    "lm_median_dbp": {
+      "median": 63.5,
+      "iqr": 17.0
+    },
+    "lm_median_fio2": {
+      "median": 50.0,
+      "iqr": 35.0
+    },
+    "lm_median_hemoglobin": {
+      "median": 104.0,
+      "iqr": 31.5
+    },
+    "lm_median_hr": {
+      "median": 83.5,
+      "iqr": 24.5
+    },
+    "lm_median_lactate": {
+      "median": 1.9,
+      "iqr": 1.4499999999999997
+    },
+    "lm_median_magnesium": {
+      "median": 0.78166,
+      "iqr": 0.2057
+    },
+    "lm_median_map": {
+      "median": 78.0,
+      "iqr": 17.5
+    },
+    "lm_median_paco2": {
+      "median": 41.0,
+      "iqr": 9.5
+    },
+    "lm_median_pao2": {
+      "median": 170.0,
+      "iqr": 165.5
+    },
+    "lm_median_ph": {
+      "median": 7.36,
+      "iqr": 0.10000000000000053
+    },
+    "lm_median_platelet": {
+      "median": 188.0,
+      "iqr": 120.0
+    },
+    "lm_median_potassium": {
+      "median": 4.1,
+      "iqr": 0.8499999999999996
+    },
+    "lm_median_resp_support": {
+      "median": 1.0,
+      "iqr": 3.5
+    },
+    "lm_median_rr": {
+      "median": 18.0,
+      "iqr": 5.5
+    },
+    "lm_median_sbp": {
+      "median": 116.5,
+      "iqr": 26.0
+    },
+    "lm_median_sodium": {
+      "median": 139.0,
+      "iqr": 5.5
+    },
+    "lm_median_spo2": {
+      "median": 98.0,
+      "iqr": 4.0
+    },
+    "lm_median_temperature": {
+      "median": 36.75,
+      "iqr": 0.5555555560000016
+    },
+    "lm_median_urine_output": {
+      "median": 135.0,
+      "iqr": 187.5
+    },
+    "lm_median_wbc": {
+      "median": 11.1,
+      "iqr": 7.5
+    },
+    "lm_median_albumin": {
+      "median": 32.0,
+      "iqr": 9.0
+    },
+    "lm_median_crp": {
+      "median": 56.1,
+      "iqr": 137.1
+    },
+    "lm_min_bun": {
+      "median": 6.783,
+      "iqr": 7.140000000000001
+    },
+    "lm_min_creatinine": {
+      "median": 88.4,
+      "iqr": 70.72
+    },
+    "lm_min_dbp": {
+      "median": 53.0,
+      "iqr": 17.0
+    },
+    "lm_min_fio2": {
+      "median": 50.0,
+      "iqr": 20.0
+    },
+    "lm_min_hemoglobin": {
+      "median": 102.0,
+      "iqr": 33.0
+    },
+    "lm_min_hr": {
+      "median": 76.0,
+      "iqr": 23.0
+    },
+    "lm_min_lactate": {
+      "median": 1.8,
+      "iqr": 1.4000000000000001
+    },
+    "lm_min_magnesium": {
+      "median": 0.78166,
+      "iqr": 0.16456000000000004
+    },
+    "lm_min_map": {
+      "median": 67.0,
+      "iqr": 18.0
+    },
+    "lm_min_paco2": {
+      "median": 38.0,
+      "iqr": 10.0
+    },
+    "lm_min_pao2": {
+      "median": 122.0,
+      "iqr": 97.0
+    },
+    "lm_min_ph": {
+      "median": 7.34,
+      "iqr": 0.1200000000000001
+    },
+    "lm_min_platelet": {
+      "median": 185.0,
+      "iqr": 123.0
+    },
+    "lm_min_potassium": {
+      "median": 4.1,
+      "iqr": 0.7999999999999998
+    },
+    "lm_min_resp_support": {
+      "median": 1.0,
+      "iqr": 4.0
+    },
+    "lm_min_rr": {
+      "median": 14.0,
+      "iqr": 5.0
+    },
+    "lm_min_sbp": {
+      "median": 100.0,
+      "iqr": 26.0
+    },
+    "lm_min_sodium": {
+      "median": 138.0,
+      "iqr": 6.0
+    },
+    "lm_min_spo2": {
+      "median": 95.0,
+      "iqr": 5.0
+    },
+    "lm_min_temperature": {
+      "median": 36.611111111,
+      "iqr": 0.5555555560000016
+    },
+    "lm_min_urine_output": {
+      "median": 80.0,
+      "iqr": 165.0
+    },
+    "lm_min_wbc": {
+      "median": 10.8,
+      "iqr": 7.2
+    },
+    "lm_min_albumin": {
+      "median": 32.0,
+      "iqr": 10.0
+    },
+    "lm_min_crp": {
+      "median": 56.1,
+      "iqr": 137.1
+    },
+    "lm_max_bun": {
+      "median": 6.783,
+      "iqr": 7.140000000000001
+    },
+    "lm_max_creatinine": {
+      "median": 88.4,
+      "iqr": 70.72
+    },
+    "lm_max_dbp": {
+      "median": 78.0,
+      "iqr": 23.0
+    },
+    "lm_max_fio2": {
+      "median": 70.0,
+      "iqr": 50.0
+    },
+    "lm_max_hemoglobin": {
+      "median": 106.0,
+      "iqr": 31.0
+    },
+    "lm_max_hr": {
+      "median": 93.0,
+      "iqr": 28.0
+    },
+    "lm_max_lactate": {
+      "median": 2.1,
+      "iqr": 1.7000000000000002
+    },
+    "lm_max_magnesium": {
+      "median": 0.78166,
+      "iqr": 0.2057
+    },
+    "lm_max_map": {
+      "median": 94.0,
+      "iqr": 23.0
+    },
+    "lm_max_paco2": {
+      "median": 44.0,
+      "iqr": 12.0
+    },
+    "lm_max_pao2": {
+      "median": 216.0,
+      "iqr": 245.0
+    },
+    "lm_max_ph": {
+      "median": 7.39,
+      "iqr": 0.09999999999999964
+    },
+    "lm_max_platelet": {
+      "median": 191.0,
+      "iqr": 118.0
+    },
+    "lm_max_potassium": {
+      "median": 4.1,
+      "iqr": 0.7999999999999998
+    },
+    "lm_max_resp_support": {
+      "median": 1.0,
+      "iqr": 3.0
+    },
+    "lm_max_rr": {
+      "median": 24.0,
+      "iqr": 8.0
+    },
+    "lm_max_sbp": {
+      "median": 136.0,
+      "iqr": 31.0
+    },
+    "lm_max_sodium": {
+      "median": 139.0,
+      "iqr": 5.0
+    },
+    "lm_max_spo2": {
+      "median": 100.0,
+      "iqr": 2.0
+    },
+    "lm_max_temperature": {
+      "median": 36.888888889,
+      "iqr": 0.6111111109999996
+    },
+    "lm_max_urine_output": {
+      "median": 225.0,
+      "iqr": 280.0
+    },
+    "lm_max_wbc": {
+      "median": 11.4,
+      "iqr": 7.9
+    },
+    "lm_max_albumin": {
+      "median": 32.0,
+      "iqr": 9.0
+    },
+    "lm_max_crp": {
+      "median": 56.1,
+      "iqr": 137.1
+    },
+    "lm_n_bun": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "lm_n_creatinine": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "lm_n_dbp": {
+      "median": 7.0,
+      "iqr": 3.0
+    },
+    "lm_n_fio2": {
+      "median": 2.0,
+      "iqr": 1.0
+    },
+    "lm_n_hemoglobin": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "lm_n_hr": {
+      "median": 7.0,
+      "iqr": 3.0
+    },
+    "lm_n_lactate": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "lm_n_magnesium": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "lm_n_map": {
+      "median": 7.0,
+      "iqr": 3.0
+    },
+    "lm_n_paco2": {
+      "median": 2.0,
+      "iqr": 3.0
+    },
+    "lm_n_pao2": {
+      "median": 2.0,
+      "iqr": 3.0
+    },
+    "lm_n_ph": {
+      "median": 2.0,
+      "iqr": 2.0
+    },
+    "lm_n_platelet": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "lm_n_potassium": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "lm_n_resp_support": {
+      "median": 2.0,
+      "iqr": 1.0
+    },
+    "lm_n_rr": {
+      "median": 8.0,
+      "iqr": 3.0
+    },
+    "lm_n_sbp": {
+      "median": 7.0,
+      "iqr": 3.0
+    },
+    "lm_n_sodium": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "lm_n_spo2": {
+      "median": 7.0,
+      "iqr": 2.0
+    },
+    "lm_n_temperature": {
+      "median": 2.0,
+      "iqr": 1.0
+    },
+    "lm_n_urine_output": {
+      "median": 3.0,
+      "iqr": 3.0
+    },
+    "lm_n_wbc": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "lm_n_albumin": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "lm_n_crp": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "lm_recency_bun": {
+      "median": 208.258333335,
+      "iqr": 181.0
+    },
+    "lm_recency_creatinine": {
+      "median": 208.0,
+      "iqr": 181.08333333000002
+    },
+    "lm_recency_dbp": {
+      "median": 28.85,
+      "iqr": 32.916666667
+    },
+    "lm_recency_fio2": {
+      "median": 91.0,
+      "iqr": 122.95
+    },
+    "lm_recency_hemoglobin": {
+      "median": 205.0,
+      "iqr": 185.31666667000002
+    },
+    "lm_recency_hr": {
+      "median": 28.133333333,
+      "iqr": 31.916666667
+    },
+    "lm_recency_lactate": {
+      "median": 179.81666667,
+      "iqr": 186.92499999650005
+    },
+    "lm_recency_magnesium": {
+      "median": 219.0,
+      "iqr": 187.6041666675
+    },
+    "lm_recency_map": {
+      "median": 28.833333333,
+      "iqr": 32.866666667
+    },
+    "lm_recency_paco2": {
+      "median": 112.1,
+      "iqr": 167.89583333175
+    },
+    "lm_recency_pao2": {
+      "median": 112.06666667,
+      "iqr": 167.9
+    },
+    "lm_recency_ph": {
+      "median": 130.0,
+      "iqr": 183.816666667
+    },
+    "lm_recency_platelet": {
+      "median": 203.68333333,
+      "iqr": 185.7
+    },
+    "lm_recency_potassium": {
+      "median": 210.46666667,
+      "iqr": 186.870833335
+    },
+    "lm_recency_resp_support": {
+      "median": 106.0,
+      "iqr": 131.8125000025
+    },
+    "lm_recency_rr": {
+      "median": 28.133333333,
+      "iqr": 32.0
+    },
+    "lm_recency_sbp": {
+      "median": 28.833333333,
+      "iqr": 32.90416666675
+    },
+    "lm_recency_sodium": {
+      "median": 211.0,
+      "iqr": 186.33333333000002
+    },
+    "lm_recency_spo2": {
+      "median": 28.716666667,
+      "iqr": 32.066666667
+    },
+    "lm_recency_temperature": {
+      "median": 104.0,
+      "iqr": 127.266666663
+    },
+    "lm_recency_urine_output": {
+      "median": 47.816666667,
+      "iqr": 74.916666666
+    },
+    "lm_recency_wbc": {
+      "median": 206.0,
+      "iqr": 184.43333334
+    },
+    "lm_recency_albumin": {
+      "median": 260.016666665,
+      "iqr": 159.86666666749997
+    },
+    "lm_recency_crp": {
+      "median": 239.71666667,
+      "iqr": 170.14999999999998
+    },
+    "lm_urine_total_6h": {
+      "median": 425.0,
+      "iqr": 490.0
+    },
+    "lm_urine_ml_kg_h_6h": {
+      "median": 0.9002057613,
+      "iqr": 1.0995342910500001
+    },
+    "lm_dose_furosemide": {
+      "median": 40.000000931,
+      "iqr": 79.999996274
+    },
+    "lm_dose_phenyl": {
+      "median": 0.0,
+      "iqr": 1.0
+    },
+    "lm_dose_dopamine": {
+      "median": 0.0,
+      "iqr": 1.0
+    },
+    "lm_dose_magnesium": {
+      "median": 2.0000001043,
+      "iqr": 2.0000001043
+    },
+    "lm_dose_potassium": {
+      "median": 20.000000596,
+      "iqr": 20.000000596
+    },
+    "lm_dose_norepi": {
+      "median": 0.0,
+      "iqr": 1.0
+    },
+    "lm_dose_crrt": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "lm_dose_epi": {
+      "median": 0.0,
+      "iqr": 1.0
+    },
+    "lm_dose_vasopressin": {
+      "median": 0.0,
+      "iqr": 1.0
+    },
+    "lm_dose_albumin": {
+      "median": 24.999999046,
+      "iqr": 24.999999403999997
+    },
+    "lm_dose_dobutamine": {
+      "median": 0.0,
+      "iqr": 1.0
+    },
+    "lm_dose_bumetanide": {
+      "median": 7.8666671663,
+      "iqr": 10.391666984
+    },
+    "lm_rate_furosemide": {
+      "median": 0.0,
+      "iqr": 1.0
+    },
+    "lm_rate_phenyl": {
+      "median": 0.0,
+      "iqr": 1.0
+    },
+    "lm_rate_dopamine": {
+      "median": 0.0,
+      "iqr": 1.0
+    },
+    "lm_rate_magnesium": {
+      "median": 0.0,
+      "iqr": 1.0
+    },
+    "lm_rate_potassium": {
+      "median": 0.0,
+      "iqr": 1.0
+    },
+    "lm_rate_norepi": {
+      "median": 0.0,
+      "iqr": 1.0
+    },
+    "lm_rate_crrt": {
+      "median": 37.2033333335,
+      "iqr": 65.74166666675
+    },
+    "lm_rate_epi": {
+      "median": 0.0,
+      "iqr": 1.0
+    },
+    "lm_rate_vasopressin": {
+      "median": 0.0,
+      "iqr": 1.0
+    },
+    "lm_rate_albumin": {
+      "median": 0.0,
+      "iqr": 1.0
+    },
+    "lm_rate_dobutamine": {
+      "median": 0.0,
+      "iqr": 1.0
+    },
+    "lm_rate_bumetanide": {
+      "median": 0.0,
+      "iqr": 1.0
+    }
+  },
+  "categorical_vocab": {
+    "language": {
+      "<UNK>": 0,
+      "<MISSING>": 1,
+      "American Sign Language": 2,
+      "Amharic": 3,
+      "Arabic": 4,
+      "Armenian": 5,
+      "Bengali": 6,
+      "Chinese": 7,
+      "English": 8,
+      "French": 9,
+      "Haitian": 10,
+      "Hindi": 11,
+      "Italian": 12,
+      "Japanese": 13,
+      "Kabuverdianu": 14,
+      "Khmer": 15,
+      "Korean": 16,
+      "Modern Greek (1453-)": 17,
+      "Other": 18,
+      "Persian": 19,
+      "Polish": 20,
+      "Portuguese": 21,
+      "Russian": 22,
+      "Somali": 23,
+      "Spanish": 24,
+      "Thai": 25,
+      "Vietnamese": 26
+    },
+    "insurance": {
+      "<UNK>": 0,
+      "<MISSING>": 1,
+      "Medicaid": 2,
+      "Medicare": 3,
+      "No charge": 4,
+      "Other": 5,
+      "Private": 6
+    },
+    "marital_status": {
+      "<UNK>": 0,
+      "<MISSING>": 1,
+      "DIVORCED": 2,
+      "MARRIED": 3,
+      "SINGLE": 4,
+      "WIDOWED": 5
+    },
+    "race": {
+      "<UNK>": 0,
+      "<MISSING>": 1,
+      "AMERICAN INDIAN/ALASKA NATIVE": 2,
+      "ASIAN": 3,
+      "ASIAN - ASIAN INDIAN": 4,
+      "ASIAN - CHINESE": 5,
+      "ASIAN - KOREAN": 6,
+      "ASIAN - SOUTH EAST ASIAN": 7,
+      "BLACK/AFRICAN": 8,
+      "BLACK/AFRICAN AMERICAN": 9,
+      "BLACK/CAPE VERDEAN": 10,
+      "BLACK/CARIBBEAN ISLAND": 11,
+      "HISPANIC OR LATINO": 12,
+      "HISPANIC/LATINO - CENTRAL AMERICAN": 13,
+      "HISPANIC/LATINO - COLUMBIAN": 14,
+      "HISPANIC/LATINO - CUBAN": 15,
+      "HISPANIC/LATINO - DOMINICAN": 16,
+      "HISPANIC/LATINO - GUATEMALAN": 17,
+      "HISPANIC/LATINO - HONDURAN": 18,
+      "HISPANIC/LATINO - MEXICAN": 19,
+      "HISPANIC/LATINO - PUERTO RICAN": 20,
+      "HISPANIC/LATINO - SALVADORAN": 21,
+      "MULTIPLE RACE/ETHNICITY": 22,
+      "NATIVE HAWAIIAN OR OTHER PACIFIC ISLANDER": 23,
+      "OTHER": 24,
+      "PATIENT DECLINED TO ANSWER": 25,
+      "PORTUGUESE": 26,
+      "SOUTH AMERICAN": 27,
+      "UNABLE TO OBTAIN": 28,
+      "UNKNOWN": 29,
+      "WHITE": 30,
+      "WHITE - BRAZILIAN": 31,
+      "WHITE - EASTERN EUROPEAN": 32,
+      "WHITE - OTHER EUROPEAN": 33,
+      "WHITE - RUSSIAN": 34
+    },
+    "gender": {
+      "<UNK>": 0,
+      "<MISSING>": 1,
+      "F": 2,
+      "M": 3
+    }
+  },
+  "event_name_vocab": {
+    "<UNK>": 0,
+    "<MISSING>": 1,
+    "albumin": 2,
+    "arterial_carbon_dioxide_partial_pressure": 3,
+    "arterial_oxygen_partial_pressure": 4,
+    "blood_ph": 5,
+    "blood_urea_nitrogen": 6,
+    "body_temperature": 7,
+    "bumetanide": 8,
+    "c_reactive_protein": 9,
+    "crrt": 10,
+    "current_respiratory_support_status": 11,
+    "diastolic_blood_pressure": 12,
+    "dobutamine": 13,
+    "dopamine": 14,
+    "epinephrine": 15,
+    "fraction_inspired_oxygen": 16,
+    "furosemide": 17,
+    "heart_rate": 18,
+    "hemoglobin": 19,
+    "magnesium_replacement": 20,
+    "magnesium_replacement_bolus": 21,
+    "mean_arterial_pressure": 22,
+    "norepinephrine": 23,
+    "peripheral_oxygen_saturation": 24,
+    "phenylephrine": 25,
+    "platelet_count": 26,
+    "potassium_replacement": 27,
+    "potassium_replacement_bolus": 28,
+    "potassium_replacement_crrt": 29,
+    "respiratory_rate": 30,
+    "serum_albumin": 31,
+    "serum_creatinine": 32,
+    "serum_lactate": 33,
+    "serum_magnesium": 34,
+    "serum_potassium": 35,
+    "serum_sodium": 36,
+    "systolic_blood_pressure": 37,
+    "urine_output": 38,
+    "vasopressin": 39,
+    "white_blood_cell_count": 40
+  },
+  "event_type_vocab": {
+    "<UNK>": 0,
+    "<MISSING>": 1,
+    "measurement": 2,
+    "treatment": 3
+  },
+  "event_unit_vocab": {
+    "<UNK>": 0,
+    "<MISSING>": 1,
+    "10^9/L": 2,
+    "C": 3,
+    "active": 4,
+    "beats/min": 5,
+    "breaths/min": 6,
+    "category": 7,
+    "g": 8,
+    "g/L": 9,
+    "indicator": 10,
+    "mEq": 11,
+    "mL": 12,
+    "mg": 13,
+    "mg/L": 14,
+    "mmHg": 15,
+    "mmol/L": 16,
+    "percent": 17,
+    "umol/L": 18,
+    "unitless": 19
+  },
+  "event_value_stats": {
+    "albumin": {
+      "median": 12.5,
+      "iqr": 12.499999046325684
+    },
+    "arterial_carbon_dioxide_partial_pressure": {
+      "median": 41.0,
+      "iqr": 12.0
+    },
+    "arterial_oxygen_partial_pressure": {
+      "median": 109.0,
+      "iqr": 66.0
+    },
+    "blood_ph": {
+      "median": 7.380000114440918,
+      "iqr": 0.1099996566772461
+    },
+    "blood_urea_nitrogen": {
+      "median": 8.567999839782715,
+      "iqr": 9.639000415802002
+    },
+    "body_temperature": {
+      "median": 36.88888931274414,
+      "iqr": 0.6666679382324219
+    },
+    "bumetanide": {
+      "median": 5.000000476837158,
+      "iqr": 5.399999499320984
+    },
+    "c_reactive_protein": {
+      "median": 86.45000076293945,
+      "iqr": 136.5750026702881
+    },
+    "crrt": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "current_respiratory_support_status": {
+      "median": 2.0,
+      "iqr": 3.0
+    },
+    "diastolic_blood_pressure": {
+      "median": 61.0,
+      "iqr": 20.0
+    },
+    "dobutamine": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "dopamine": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "epinephrine": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "fraction_inspired_oxygen": {
+      "median": 40.0,
+      "iqr": 10.0
+    },
+    "furosemide": {
+      "median": 40.0,
+      "iqr": 60.0
+    },
+    "heart_rate": {
+      "median": 85.0,
+      "iqr": 25.0
+    },
+    "hemoglobin": {
+      "median": 93.0,
+      "iqr": 28.0
+    },
+    "magnesium_replacement": {
+      "median": 2.0,
+      "iqr": 1.0
+    },
+    "magnesium_replacement_bolus": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "mean_arterial_pressure": {
+      "median": 77.0,
+      "iqr": 20.0
+    },
+    "norepinephrine": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "peripheral_oxygen_saturation": {
+      "median": 97.0,
+      "iqr": 4.0
+    },
+    "phenylephrine": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "platelet_count": {
+      "median": 176.0,
+      "iqr": 145.0
+    },
+    "potassium_replacement": {
+      "median": 20.0,
+      "iqr": 1.0
+    },
+    "potassium_replacement_bolus": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "potassium_replacement_crrt": {
+      "median": 9.370002746582031,
+      "iqr": 4.89000129699707
+    },
+    "respiratory_rate": {
+      "median": 20.0,
+      "iqr": 8.0
+    },
+    "serum_albumin": {
+      "median": 29.0,
+      "iqr": 8.0
+    },
+    "serum_creatinine": {
+      "median": 97.23999786376953,
+      "iqr": 97.23999404907227
+    },
+    "serum_lactate": {
+      "median": 1.7999999523162842,
+      "iqr": 1.5999999046325684
+    },
+    "serum_magnesium": {
+      "median": 0.8639400005340576,
+      "iqr": 0.1645599603652954
+    },
+    "serum_potassium": {
+      "median": 4.099999904632568,
+      "iqr": 0.7000000476837158
+    },
+    "serum_sodium": {
+      "median": 139.0,
+      "iqr": 6.0
+    },
+    "systolic_blood_pressure": {
+      "median": 116.0,
+      "iqr": 30.0
+    },
+    "urine_output": {
+      "median": 100.0,
+      "iqr": 155.0
+    },
+    "vasopressin": {
+      "median": 1.0,
+      "iqr": 1.0
+    },
+    "white_blood_cell_count": {
+      "median": 10.899999618530273,
+      "iqr": 7.399999618530273
+    }
+  },
+  "event_clip": 20.0,
+  "max_events": 256
+}

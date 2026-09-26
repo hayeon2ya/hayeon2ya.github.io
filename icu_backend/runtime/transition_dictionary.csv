@@ -1,0 +1,14 @@
+head_index,transition,source_state,source_name,destination_state,destination_name
+0,0_to_1,0,Neither AKI nor ARF,1,AKI only
+1,0_to_2,0,Neither AKI nor ARF,2,ARF only
+2,0_to_3,0,Neither AKI nor ARF,3,Both AKI and ARF
+3,0_to_4,0,Neither AKI nor ARF,4,ICU death
+4,0_to_5,0,Neither AKI nor ARF,5,ICU discharge alive
+5,1_to_3,1,AKI only,3,Both AKI and ARF
+6,1_to_4,1,AKI only,4,ICU death
+7,1_to_5,1,AKI only,5,ICU discharge alive
+8,2_to_3,2,ARF only,3,Both AKI and ARF
+9,2_to_4,2,ARF only,4,ICU death
+10,2_to_5,2,ARF only,5,ICU discharge alive
+11,3_to_4,3,Both AKI and ARF,4,ICU death
+12,3_to_5,3,Both AKI and ARF,5,ICU discharge alive

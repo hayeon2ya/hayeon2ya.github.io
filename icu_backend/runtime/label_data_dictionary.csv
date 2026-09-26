@@ -1,0 +1,80 @@
+variable,type,definition,source
+pred_aki_3h,model output,Predicted probability of aki within 3 h after current decision time,primary head index 0
+obs_aki_3h,observed binary label,"Observed aki event after decision_min and <= decision_min + 3*60 min, among eligible rows",None
+risk_aki_3h,risk-set indicator,"At risk when current_state in {0,2}",None
+pred_aki_12h,model output,Predicted probability of aki within 12 h after current decision time,primary head index 1
+obs_aki_12h,observed binary label,"Observed aki event after decision_min and <= decision_min + 12*60 min, among eligible rows",None
+risk_aki_12h,risk-set indicator,"At risk when current_state in {0,2}",None
+pred_aki_24h,model output,Predicted probability of aki within 24 h after current decision time,primary head index 2
+obs_aki_24h,observed binary label,"Observed aki event after decision_min and <= decision_min + 24*60 min, among eligible rows",None
+risk_aki_24h,risk-set indicator,"At risk when current_state in {0,2}",None
+pred_aki_48h,model output,Predicted probability of aki within 48 h after current decision time,primary head index 3
+obs_aki_48h,observed binary label,"Observed aki event after decision_min and <= decision_min + 48*60 min, among eligible rows",None
+risk_aki_48h,risk-set indicator,"At risk when current_state in {0,2}",None
+pred_aki_72h,model output,Predicted probability of aki within 72 h after current decision time,primary head index 4
+obs_aki_72h,observed binary label,"Observed aki event after decision_min and <= decision_min + 72*60 min, among eligible rows",None
+risk_aki_72h,risk-set indicator,"At risk when current_state in {0,2}",None
+pred_arf_3h,model output,Predicted probability of arf within 3 h after current decision time,primary head index 5
+obs_arf_3h,observed binary label,"Observed arf event after decision_min and <= decision_min + 3*60 min, among eligible rows",None
+risk_arf_3h,risk-set indicator,"At risk when current_state in {0,1}",None
+pred_arf_12h,model output,Predicted probability of arf within 12 h after current decision time,primary head index 6
+obs_arf_12h,observed binary label,"Observed arf event after decision_min and <= decision_min + 12*60 min, among eligible rows",None
+risk_arf_12h,risk-set indicator,"At risk when current_state in {0,1}",None
+pred_arf_24h,model output,Predicted probability of arf within 24 h after current decision time,primary head index 7
+obs_arf_24h,observed binary label,"Observed arf event after decision_min and <= decision_min + 24*60 min, among eligible rows",None
+risk_arf_24h,risk-set indicator,"At risk when current_state in {0,1}",None
+pred_arf_48h,model output,Predicted probability of arf within 48 h after current decision time,primary head index 8
+obs_arf_48h,observed binary label,"Observed arf event after decision_min and <= decision_min + 48*60 min, among eligible rows",None
+risk_arf_48h,risk-set indicator,"At risk when current_state in {0,1}",None
+pred_arf_72h,model output,Predicted probability of arf within 72 h after current decision time,primary head index 9
+obs_arf_72h,observed binary label,"Observed arf event after decision_min and <= decision_min + 72*60 min, among eligible rows",None
+risk_arf_72h,risk-set indicator,"At risk when current_state in {0,1}",None
+pred_both_3h,model output,Predicted probability of both within 3 h after current decision time,primary head index 10
+obs_both_3h,observed binary label,"Observed both event after decision_min and <= decision_min + 3*60 min, among eligible rows",None
+risk_both_3h,risk-set indicator,"At risk when current_state in {0,1,2}",None
+pred_both_12h,model output,Predicted probability of both within 12 h after current decision time,primary head index 11
+obs_both_12h,observed binary label,"Observed both event after decision_min and <= decision_min + 12*60 min, among eligible rows",None
+risk_both_12h,risk-set indicator,"At risk when current_state in {0,1,2}",None
+pred_both_24h,model output,Predicted probability of both within 24 h after current decision time,primary head index 12
+obs_both_24h,observed binary label,"Observed both event after decision_min and <= decision_min + 24*60 min, among eligible rows",None
+risk_both_24h,risk-set indicator,"At risk when current_state in {0,1,2}",None
+pred_both_48h,model output,Predicted probability of both within 48 h after current decision time,primary head index 13
+obs_both_48h,observed binary label,"Observed both event after decision_min and <= decision_min + 48*60 min, among eligible rows",None
+risk_both_48h,risk-set indicator,"At risk when current_state in {0,1,2}",None
+pred_both_72h,model output,Predicted probability of both within 72 h after current decision time,primary head index 14
+obs_both_72h,observed binary label,"Observed both event after decision_min and <= decision_min + 72*60 min, among eligible rows",None
+risk_both_72h,risk-set indicator,"At risk when current_state in {0,1,2}",None
+pred_death_3h,model output,Predicted probability of death within 3 h after current decision time,primary head index 15
+obs_death_3h,observed binary label,"Observed death event after decision_min and <= decision_min + 3*60 min, among eligible rows",None
+risk_death_3h,risk-set indicator,"At risk when current_state in {0,1,2,3}",None
+pred_death_12h,model output,Predicted probability of death within 12 h after current decision time,primary head index 16
+obs_death_12h,observed binary label,"Observed death event after decision_min and <= decision_min + 12*60 min, among eligible rows",None
+risk_death_12h,risk-set indicator,"At risk when current_state in {0,1,2,3}",None
+pred_death_24h,model output,Predicted probability of death within 24 h after current decision time,primary head index 17
+obs_death_24h,observed binary label,"Observed death event after decision_min and <= decision_min + 24*60 min, among eligible rows",None
+risk_death_24h,risk-set indicator,"At risk when current_state in {0,1,2,3}",None
+pred_death_48h,model output,Predicted probability of death within 48 h after current decision time,primary head index 18
+obs_death_48h,observed binary label,"Observed death event after decision_min and <= decision_min + 48*60 min, among eligible rows",None
+risk_death_48h,risk-set indicator,"At risk when current_state in {0,1,2,3}",None
+pred_death_72h,model output,Predicted probability of death within 72 h after current decision time,primary head index 19
+obs_death_72h,observed binary label,"Observed death event after decision_min and <= decision_min + 72*60 min, among eligible rows",None
+risk_death_72h,risk-set indicator,"At risk when current_state in {0,1,2,3}",None
+pred_discharge_3h,model output,Predicted probability of discharge within 3 h after current decision time,primary head index 20
+obs_discharge_3h,observed binary label,"Observed discharge event after decision_min and <= decision_min + 3*60 min, among eligible rows",None
+risk_discharge_3h,risk-set indicator,"At risk when current_state in {0,1,2,3}",None
+pred_discharge_12h,model output,Predicted probability of discharge within 12 h after current decision time,primary head index 21
+obs_discharge_12h,observed binary label,"Observed discharge event after decision_min and <= decision_min + 12*60 min, among eligible rows",None
+risk_discharge_12h,risk-set indicator,"At risk when current_state in {0,1,2,3}",None
+pred_discharge_24h,model output,Predicted probability of discharge within 24 h after current decision time,primary head index 22
+obs_discharge_24h,observed binary label,"Observed discharge event after decision_min and <= decision_min + 24*60 min, among eligible rows",None
+risk_discharge_24h,risk-set indicator,"At risk when current_state in {0,1,2,3}",None
+pred_discharge_48h,model output,Predicted probability of discharge within 48 h after current decision time,primary head index 23
+obs_discharge_48h,observed binary label,"Observed discharge event after decision_min and <= decision_min + 48*60 min, among eligible rows",None
+risk_discharge_48h,risk-set indicator,"At risk when current_state in {0,1,2,3}",None
+pred_discharge_72h,model output,Predicted probability of discharge within 72 h after current decision time,primary head index 24
+obs_discharge_72h,observed binary label,"Observed discharge event after decision_min and <= decision_min + 72*60 min, among eligible rows",None
+risk_discharge_72h,risk-set indicator,"At risk when current_state in {0,1,2,3}",None
+decision_min,time,Prediction decision time in minutes relative to the 6-hour ICU landmark. decision_min=0 corresponds to the landmark.,decision_min
+current_state,state,Cumulative kidney-respiratory state immediately before prediction at decision_min; prediction data contain states 0-3.,model_decision_labels
+stay_id,identifier,ICU stay identifier,MIMIC-IV / analytic dataset
+subject_id,identifier,Patient identifier; used for patient-level data splitting / cross-validation.,MIMIC-IV / analytic dataset

@@ -5,6 +5,12 @@ layout: default
 
 {% include career-profile.html %}
 
+<section class="section">
+  <h2 class="section-title">ICU Prediction App</h2>
+  <p>Explore a research interface for longitudinal ICU predictions using structured clinical events.</p>
+  <a class="btn btn-primary" href="{{ '/icu-app/' | relative_url }}">Open ICU Prediction App &rarr;</a>
+</section>
+
 {% unless site.data.data.sidebar.education %}
   {% include education.html %}
 {% endunless %}

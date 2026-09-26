@@ -33,3 +33,9 @@ compress_html: # - http://jch.penibelst.de/
 port: 4000
 host: 0.0.0.0
 safe: false
+
+# Python application and model artifacts are not public website assets.
+exclude:
+  - icu_backend
+  - Dockerfile.icu
+  - ICU_DEPLOYMENT.md
