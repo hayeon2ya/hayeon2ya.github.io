@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% assign theme = site.data.themes[site.ui_theme] %}
+<html lang="en">
+  <head>{% include head-blog.html %}</head>
+  <body>
+    {% include nav.html %}
+    <div class="container">
+      {% if page.header-img %}
+      <div class="card border-0">
+          <div class="card-body">
+            <div class="card-text">
+                {{ content }}
+            </div>
+            {% if page.last-updated %}
+              <p class="card-text"><small class="text-muted">This page was last updated {% if page.updated-at-link %}<a href="{{ page.updated-at-link }}" class="text-muted" rel="nofollow">at</a>{% else %}at{% endif %} {{ "now" | date: "%Y-%m-%d %H:%M" }}.</small></p>
+            {% endif %}
+          </div>
+      </div>
+      {% else %}
+      <div class="card border-0">
+          <div class="card-body">
+            <div class="card-text">
+                {{ content }}
+            </div>
+            {% if page.last-updated %}
+              <p class="card-text"><small class="text-muted">This page was last updated {% if page.updated-at-link %}<a href="{{ page.updated-at-link }}" class="text-muted" rel="nofollow">at</a>{% else %}at{% endif %} {{ "now" | date: "%Y-%m-%d %H:%M" }}.</small></p>
+            {% endif %}
+          </div>
+      </div>
+      {% endif %}
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

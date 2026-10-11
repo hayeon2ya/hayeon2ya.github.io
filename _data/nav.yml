@@ -1,0 +1,8 @@
+nav_list_title: Navigation List
+links:
+- title: Publications
+  url: /publications.html
+- title: CV
+  url: /assets/pdf/HayeonLee_CV.pdf
+- title: ICU Prediction App
+  url: /icu-app/

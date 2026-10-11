@@ -1,90 +1,35 @@
-<a href="https://jekyll-themes.com">
-<img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
-</a>
+# Hayeon Lee — personal website
 
-# Orbit
-> This theme is designed by Xiaoying Riley at [3rd Wave Media](http://themes.3rdwavemedia.com/).
-> Visit [her website](http://themes.3rdwavemedia.com/) for more themes.
+Jekyll academic website using the Dumbarton theme and the public layout of `yw-ray.github.io`. Production URL: https://hayeon2ya.github.io.
 
-I have made this into a Jekyll Theme. Checkout the live demo [here](https://online-cv.webjeda.com).
+## Content
 
-<table>
-  <tr>
-    <th>Desktop</th>
-    <th>Mobile</th>
-  </tr>
-  <tr>
-    <td>
-        <img src="https://online-cv.webjeda.com/assets/images/desktop.png?raw=true" width="600"/>
-    </td>
-    <td>
-        <img src="https://online-cv.webjeda.com/assets/images/mobile.png?raw=true" width="250"/>
-    </td>
-  </tr>
-</table>
+- `index.md`: introduction.
+- `_config.yml`: identity, social links, site URL, and theme settings.
+- `_data/education.yml`, `experience.yml`, `honors.yml`, `skills.yml`: profile sections.
+- `_data/nav.yml`: navigation.
+- `_bibliography/papers.bib`: publications; `selected = {true}` shows an entry on the homepage. Original titles, journals, years, author roles, impact factors, and notes are preserved. Full author lists were not supplied.
+- `_layouts/`, `_includes/`, `_sass/`, `css/`: theme and presentation.
+- `pages/publications.html`: full publication list.
+- `assets/img/avatar/hayeon.jpg`: original profile photo.
+- `assets/pdf/HayeonLee_CV.pdf`: original CV PDF, with its design unchanged.
 
-## Installation
+The reference site's ledger, research dashboards, personal assets, and demo content are excluded. The existing ICU application and backend remain; see `ICU_DEPLOYMENT.md`.
 
-* [Fork](https://github.com/sharu725/online-cv/fork) the repository;
-* Go to settings and set master branch as Github Pages source;
-* Your new site should be ready at `https://<username>.github.io/online-cv/`;
-* Printable version of the site can be found at `https://<username>.github.io/online-cv/print`. Use a third party link https://pdflayer.com/, https://www.web2pdfconvert.com/ etc to get the printable PDF.
+## CV synchronization
 
-Change all the details from one place: `_data/data.yml`.
+The separate `hayeon2ya/resume-template-anubhav` repository continues to build `main.pdf` using its existing LaTeX design. `.github/workflows/sync-cv-pdf.yml` downloads it every 30 minutes or on manual dispatch, validates the PDF header, and commits updates to `assets/pdf/HayeonLee_CV.pdf`. All website CV links open that local PDF directly, as in the reference site.
 
-### To preview/edit locally with docker
+The Pages workflow also runs after successful CV synchronization, so bot commits update the deployed PDF. The deployment build preserves the previous `/cv.pdf` URL. `/cv/`, `/print.html`, and `/publications/` remain compatibility links.
+
+## Build and deployment
 
 ```sh
-docker-compose up
-```
-
-*docker-compose.yml* file is used to create a container that is reachable under <http://localhost:4000>.
-Changes *_data/data.yml* will be visible after a while.
-
-### Local machine
-
-* Get the repo into your machine 
-
-```bash
-git clone https://github.com/sharu725/online-cv.git
-```
-
-* Install required ruby gems
-
-```bash
 bundle install
-```
-
-* Serve the site locally
-
-```bash
+bundle exec jekyll build
 bundle exec jekyll serve
 ```
 
-* Navigate to `http://localhost:4000`
+GitHub Actions builds and deploys `master` through `.github/workflows/jekyll.yml`. Repository **Settings → Pages → Source** must be **GitHub Actions**, since `jekyll-scholar` requires this custom build. Local migration does not change remote settings or publish the site.
 
-
-## Skins
-
-There are 6 color schemes available:
-
-| Blue | Turquoise | Green |
-|---------|---------|---------|
-| <img src="https://online-cv.webjeda.com/assets/images/blue.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/turquoise.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/green.jpg" width="300"/> |
-
-| Berry | Orange | Ceramic |
-|---------|---------|---------|
-| <img src="https://online-cv.webjeda.com/assets/images/berry.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/orange.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/ceramic.jpg" width="300"/> |
-
-## Credits
-
-Thanks to [Nelson Estevão](https://github.com/nelsonmestevao) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=nelsonmestevao).
-
-Thanks to [t-h-e(sfrost)](https://github.com/t-h-e) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=t-h-e).
-
-Check out for more themes: [**Jekyll Themes**](http://jekyll-themes.com).
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=sharu725/online-cv&type=Date)](https://star-history.com/#sharu725/online-cv&Date)
-
+Dumbarton theme copyright and license are retained in `LICENSE.txt`; the previous theme's license remains in `LICENSE.md`.

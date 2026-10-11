@@ -1,41 +1,102 @@
-#Update all the sections by editing the data.yml file inside _data folder.
-
-# Site Settings
-title: Hayeon Lee CV
-url: 'https://ihayeon2ya-code.github.io'
-
-#change it according to your repository name
+title: Hayeon Lee
+email: wwhy28@khu.ac.kr
+description: Personal website of Hayeon Lee, PhD candidate at Kyung Hee University
 baseurl: ''
-
-description: Curriculum vitae for Hayeon Lee, PhD candidate
-# Style will be applied only after restarting the build or serve. Just choose one of the options.
-theme_skin: blue # blue turquoise green berry orange ceramic teal oceanstale
-chrome_mobile_color: #use hex colors (ex:#1976d2) or leave empty if you don't want a color for chrome mobile searchbar
-
-# Tracker
-analytics:
-
-# Sass/SCSS
+url: https://hayeon2ya.github.io
+image: /assets/img/avatar/hayeon.jpg
+image_alt: Hayeon Lee
+author: Hayeon Lee
+profile_image: /assets/img/avatar/hayeon.jpg
+occupation: PhD candidate at Kyung Hee University
+snippet: Digital Health, Medical Informatics, Medical AI, Biomedical Engineering,
+  and Mathematical Modelling
+twitter: null
+github: null
+linkedin: hayeon-lee-04bb25378
+stackoverflow: null
+website: null
+codepen: null
+medium: null
+keybase: null
+pgp: null
+ctftime: null
+phonenumber: null
+orcid: 0009-0000-2403-6241
+googlescholar: https://scholar.google.com/citations?user=4Z_lQYMAAAAJ&hl=en
+ui_theme: abyss
+tags: post jekyll styleguide ipsum
+twitter-widget: false
+comments: false
+gitalk_client_id: null
+gitalk_client_secret: null
+gitalk_repo: null
+gitalk_owner: null
+gitalk_admin: null
+gitalk_distraction_mode: false
+nav-color: '#00334e'
+footer-color: '#00334e'
+color-scheme: '#00334e'
+card-color: '#00334e'
+nav-dIcon: fas fa-caret-down
+animate: true
+home_option: education
+help_tips: false
+theme: null
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+plugins:
+- jekyll-feed
+- jekyll-scholar
+- jekyll-environment-variables
 sass:
   sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-# Build settings
-compress-site: yes
-
-encoding: "utf-8"
-compress_html: # - http://jch.penibelst.de/
-  clippings: all
-  ignore:
-    envs: development
-
-# Development Settings
-port: 4000
-host: 0.0.0.0
-safe: false
-
-# Python application and model artifacts are not public website assets.
+  style: compressed
+include:
+- _posts
 exclude:
-  - icu_backend
-  - Dockerfile.icu
-  - ICU_DEPLOYMENT.md
+- .sass-cache/
+- .jekyll-cache/
+- gemfiles/
+- Gemfile
+- Gemfile.lock
+- node_modules/
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
+- icu_backend
+- Dockerfile.icu
+- ICU_DEPLOYMENT.md
+- README.md
+- WEBPAGE_MANAGEMENT_GUIDE.md
+- Dumbarton.gemspec
+- LICENSE.md
+- LICENSE.txt
+scholar:
+  last_name: Lee
+  first_name: Hayeon
+  style: apa
+  locale: en
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+  replace_strings: true
+  join_strings: true
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: null
+  query: '@*'
+  sort_by: year
+  order: descending
+font_awesome_id: 32a2b2a489
+google-site-verification: null
+yandex-verification: null
+msvalidate: null
+alexaVerifyID: null
+pinterestdomain_verify: null
+norton-safeweb: null
+detectphone: true
+x-dns-prefetch-control: true
+fbappid: null
+pgp-key: null

@@ -1,54 +1,13 @@
-{% assign education = site.data.data.education %}
-{% if education %}
-  {% if site.data.data.sidebar.education %}
-  <div class="education-container container-block">
-
-    <h2 class="container-block-title">
-      {{ education.title }}
-    </h2>
-
-    {% for graduation in education.info %}
-    <div class="item">
-      <h4 class="degree">{{ graduation.degree }}</h4>
-      <h5 class="meta">{{ graduation.university }}</h5>
-      <div class="time">{{ graduation.time }}</div>
-    </div><!--//item-->
+ {% assign theme = site.data.themes[site.ui_theme] %}
+  <h4 class="card-title" style="font-family:{{ theme.education-title-font}};color:{{theme.education-font-color}};font-weight:bold;">Education</h4>
+  <ul class="list-unstyled">
+  {% for entry in site.data.education %}
+    <li class="media">
+      {% if entry.Icon %}<img src="{{ entry.Icon }}" class="mr-3" alt="..." style="width:50px;height:50px;object-fit:contain;">{% endif %}
+      <div class="media-body">
+        <h5 style="font-family:{{ theme.education-entry-font}};font-size:{{ theme.education-entry-size }};color:{{theme.education-font-color}};">{{ entry.School }}</h5>
+        <p style="font-family:{{ theme.education-entry-font}};font-size:{{ theme.education-section-size }};color:{{theme.education-font-color}};"><i>{% if entry.Degree %}{{ entry.Degree }} in {% endif %}{{ entry.Program }}{% if entry.Period %} ({{ entry.Period }}){% endif %}</i></p>
+      </div>
+    </li>
     {% endfor %}
-
-  </div><!--//education-container-->
-  {% else %}
-  <section class="section educations-section">
-
-    <h2 class="section-title">
-      <span class="fa-stack fa-xs">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
-      </span>
-      {{ education.title }}
-    </h2>
-
-    {% for graduation in education.info %}
-    <div class="item">
-
-      <div class="meta">
-
-        <div class="upper-row">
-          <h3 class="degree">{{ graduation.degree }}</h3>
-          <div class="time">{{ graduation.time }}</div>
-        </div><!--//upper-row-->
-
-        <div class="university">{{ graduation.university }}</div>
-      </div><!--//meta-->
-
-      {% if graduation.details %}
-      <div class="details">
-        {{ graduation.details | markdownify }}
-      </div><!--//details-->
-      {% endif %}
-
-    </div><!--//item-->
-    {% endfor %}
-
-  </section><!--//section-->
-  {% endif %}
-{% endif %}
+  </ul>

@@ -1,32 +1,14 @@
----
-#Add "layout: compress" here to compress the html code
----
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en"> <!--<![endif]-->
-{% include head.html %}
-
-<body>
-  <nav class="site-nav d-print-none">
-    <a href="{{ site.baseurl }}/" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
-    <a href="{{ "/icu-app/" | relative_url }}">ICU Prediction App</a>
-    <a href="{{ site.baseurl }}/cv.pdf">CV</a>
-    <a href="{{ site.baseurl }}/publications/" {% if page.url == "/publications/" %}class="active"{% endif %}>Publications</a>
-  </nav>
-
-  <div class="wrapper">
-    {% include sidebar.html %}
-
-    <div class="main-wrapper">
+{% assign theme = site.data.themes[site.ui_theme] %}
+<html lang="en">
+  <head>{% include head.html %}</head>
+  <body style="background-color:{{theme.background-color}};">
+    {% include nav.html %}
+    <div class="dumbarton-spacer-sm"></div>
+    <div class="container">
       {{ content }}
     </div>
-  </div>
-
-  {% include footer.html %}
-
-  {% include scripts.html %}
-</body>
-
+    <div class="dumbarton-spacer"></div>
+    {% include footer.html %}
+  </body>
 </html>

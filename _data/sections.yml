@@ -1,0 +1,5 @@
+- name: Selected Publications
+  id: publications
+  description:
+  url: publications.html
+  first: true
