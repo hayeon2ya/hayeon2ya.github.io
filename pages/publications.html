@@ -46,14 +46,14 @@ ol.bibliography > li::before {
     <div class="card h-100"><div class="card-body">
       <div class="h3 mb-1" data-stat="first">—</div>
       <div>First author</div>
-      <small class="text-muted">Total / IF ≥ 10</small>
+      <small class="text-muted">Total (IF ≥ 10)</small>
     </div></div>
   </div>
   <div class="col-md-3 mb-2">
     <div class="card h-100"><div class="card-body">
       <div class="h3 mb-1" data-stat="corresponding">—</div>
       <div>Corresponding author</div>
-      <small class="text-muted">Total / IF ≥ 10</small>
+      <small class="text-muted">Total (IF ≥ 10)</small>
     </div></div>
   </div>
   <div class="col-md-3 mb-2">
@@ -134,8 +134,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (role === 'Co-author') coauthorCount += 1;
   });
 
-  document.querySelector('[data-stat="first"]').textContent = firstCount + '/' + firstHighImpactCount;
-  document.querySelector('[data-stat="corresponding"]').textContent = correspondingCount + '/' + correspondingHighImpactCount;
+  document.querySelector('[data-stat="first"]').textContent = firstCount + ' (' + firstHighImpactCount + ')';
+  document.querySelector('[data-stat="corresponding"]').textContent = correspondingCount + ' (' + correspondingHighImpactCount + ')';
   document.querySelector('[data-stat="coauthor"]').textContent = coauthorCount;
   document.querySelector('[data-stat="total"]').textContent = allEntries.length;
 

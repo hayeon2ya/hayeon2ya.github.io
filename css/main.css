@@ -610,10 +610,10 @@ background-image: url(https://ionicframework.com/img/getting-started/ionic-nativ
   margin: 0;
 }
 
-a:link {color: #149f98;}      /* unvisited link */
-a:visited {color: #149f98;}   /* visited link */
-a:hover {color: #149f98; text-decoration: underline;}     /* mouse over link */
-a:active {color: #149f98;}    /* selected link */
+a:link {color: #ff9800;}      /* unvisited link */
+a:visited {color: #ff9800;}   /* visited link */
+a:hover {color: #ff9800; text-decoration: underline;}     /* mouse over link */
+a:active {color: #ff9800;}    /* selected link */
 
 
 
