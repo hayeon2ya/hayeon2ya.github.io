@@ -123,35 +123,23 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('[data-stat="coauthor"]').textContent = coauthorCount;
   document.querySelector('[data-stat="total"]').textContent = allEntries.length;
 
-  var chronologicalEntries = Array.from(allEntries).sort(function (a, b) {
-    function publicationYear(item) {
-      var periodical = item.querySelector('.periodical');
-      var match = periodical && periodical.textContent.match(/\b(20\d{2})\b/);
-      return match ? Number(match[1]) : Number.MAX_SAFE_INTEGER;
-    }
-    return publicationYear(a) - publicationYear(b);
-  });
-  var numberByEntryId = new Map();
-  chronologicalEntries.forEach(function (item, index) {
-    var entry = item.querySelector('[id^="hayeon"]');
-    if (entry) numberByEntryId.set(entry.id, index + 1);
-  });
-
   document.querySelectorAll('#publication-year-content ol.bibliography').forEach(function (list) {
-    Array.from(list.children).forEach(function (item) {
-      var entry = item.querySelector('[id^="hayeon"]');
-      if (entry && numberByEntryId.has(entry.id)) item.dataset.number = numberByEntryId.get(entry.id);
+    var entries = Array.from(list.children);
+    function impactFactor(item) {
+      var meta = item.querySelector('.publication-meta');
+      var match = meta && meta.textContent.match(/\bIF\s*([\d.]+)/);
+      return match ? Number(match[1]) : -1;
+    }
+
+    entries.sort(function (a, b) {
+      return impactFactor(a) - impactFactor(b);
+    }).forEach(function (item, index) {
+      item.dataset.number = index + 1;
     });
-    Array.from(list.children)
-      .sort(function (a, b) {
-        function impactFactor(item) {
-          var meta = item.querySelector('.publication-meta');
-          var match = meta && meta.textContent.match(/\bIF\s*([\d.]+)/);
-          return match ? Number(match[1]) : -1;
-        }
-        return impactFactor(b) - impactFactor(a);
-      })
-      .forEach(function (item) { list.appendChild(item); });
+
+    entries.sort(function (a, b) {
+      return impactFactor(b) - impactFactor(a);
+    }).forEach(function (item) { list.appendChild(item); });
   });
 });
 </script>
