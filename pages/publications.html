@@ -14,18 +14,16 @@ last-updated: 2020-10-30 5:55 PM
 
 <style>
 ol.bibliography {
-  counter-reset: bibcount 0;
   list-style: none;
   padding-left: 0;
 }
 ol.bibliography > li {
-  counter-increment: bibcount 1;
   display: flex;
   align-items: flex-start;
   margin-bottom: 1em;
 }
 ol.bibliography > li::before {
-  content: counter(bibcount) ".";
+  content: attr(data-number) ".";
   font-weight: bold;
   margin-right: 0.75em;
   white-space: nowrap;
@@ -34,6 +32,28 @@ ol.bibliography > li::before {
 </style>
 
 <p class="text-center text-muted">Select ALL or a year. Papers are sorted by impact factor, highest first.</p>
+
+<div class="row text-center mb-4" id="publication-stats" aria-label="Publication statistics">
+  <div class="col-md-4 mb-2">
+    <div class="card h-100"><div class="card-body">
+      <div class="h3 mb-1" data-stat="first-corresponding">—</div>
+      <div>First / Corresponding</div>
+      <small class="text-muted">First IF ≥ 20; Corresponding IF ≥ 10</small>
+    </div></div>
+  </div>
+  <div class="col-md-4 mb-2">
+    <div class="card h-100"><div class="card-body">
+      <div class="h3 mb-1" data-stat="coauthor">—</div>
+      <div>Co-author</div>
+    </div></div>
+  </div>
+  <div class="col-md-4 mb-2">
+    <div class="card h-100"><div class="card-body">
+      <div class="h3 mb-1" data-stat="total">—</div>
+      <div>Total publications</div>
+    </div></div>
+  </div>
+</div>
 
 <ul class="nav nav-tabs justify-content-center mb-3" id="publication-year-tabs" role="tablist">
   <li class="nav-item" role="presentation">
@@ -73,7 +93,46 @@ ol.bibliography > li::before {
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+  var allEntries = document.querySelectorAll('#year-all ol.bibliography > li');
+  var firstCorrespondingCount = 0;
+  var coauthorCount = 0;
+
+  allEntries.forEach(function (item) {
+    var meta = item.querySelector('.publication-meta');
+    if (!meta) return;
+
+    var values = meta.textContent.split('·');
+    var role = values[0].trim();
+    var impactFactor = Number((meta.textContent.match(/\bIF\s*([\d.]+)/) || [])[1]);
+
+    if (role === 'First' && impactFactor >= 20) firstCorrespondingCount += 1;
+    if (role === 'Corresponding' && impactFactor >= 10) firstCorrespondingCount += 1;
+    if (role === 'Co-author') coauthorCount += 1;
+  });
+
+  document.querySelector('[data-stat="first-corresponding"]').textContent = firstCorrespondingCount;
+  document.querySelector('[data-stat="coauthor"]').textContent = coauthorCount;
+  document.querySelector('[data-stat="total"]').textContent = allEntries.length;
+
+  var chronologicalEntries = Array.from(allEntries).sort(function (a, b) {
+    function publicationYear(item) {
+      var periodical = item.querySelector('.periodical');
+      var match = periodical && periodical.textContent.match(/\b(20\d{2})\b/);
+      return match ? Number(match[1]) : Number.MAX_SAFE_INTEGER;
+    }
+    return publicationYear(a) - publicationYear(b);
+  });
+  var numberByEntryId = new Map();
+  chronologicalEntries.forEach(function (item, index) {
+    var entry = item.querySelector('[id^="hayeon"]');
+    if (entry) numberByEntryId.set(entry.id, index + 1);
+  });
+
   document.querySelectorAll('#publication-year-content ol.bibliography').forEach(function (list) {
+    Array.from(list.children).forEach(function (item) {
+      var entry = item.querySelector('[id^="hayeon"]');
+      if (entry && numberByEntryId.has(entry.id)) item.dataset.number = numberByEntryId.get(entry.id);
+    });
     Array.from(list.children)
       .sort(function (a, b) {
         function impactFactor(item) {
