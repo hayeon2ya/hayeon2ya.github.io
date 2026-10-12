@@ -622,6 +622,16 @@ a:active {color: #ff9800;}    /* selected link */
   color: #ff9800 !important;
 }
 
+.title .publication-link-icon {
+  display: inline-block;
+  margin: 0;
+  padding: 0 .1em;
+  border: 0;
+  font-size: .8em;
+  line-height: 1;
+  vertical-align: .12em;
+}
+
 
 
 /* regular - font-weight: 400 */
