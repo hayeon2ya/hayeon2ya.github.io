@@ -46,14 +46,12 @@ ol.bibliography > li::before {
     <div class="card h-100"><div class="card-body">
       <div class="h3 mb-1" data-stat="first">—</div>
       <div>First author</div>
-      <small class="text-muted">IF ≥ 20</small>
     </div></div>
   </div>
   <div class="col-md-3 mb-2">
     <div class="card h-100"><div class="card-body">
       <div class="h3 mb-1" data-stat="corresponding">—</div>
       <div>Corresponding author</div>
-      <small class="text-muted">IF ≥ 10</small>
     </div></div>
   </div>
   <div class="col-md-3 mb-2">
@@ -119,10 +117,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var values = meta.textContent.split('·');
     var role = values[0].trim();
-    var impactFactor = Number((meta.textContent.match(/\bIF\s*([\d.]+)/) || [])[1]);
-
-    if (role === 'First' && impactFactor >= 20) firstCount += 1;
-    if (role === 'Corresponding' && impactFactor >= 10) correspondingCount += 1;
+    if (role === 'First') firstCount += 1;
+    if (role === 'Corresponding') correspondingCount += 1;
     if (role === 'Co-author') coauthorCount += 1;
   });
 
