@@ -141,20 +141,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.querySelectorAll('#publication-year-content ol.bibliography').forEach(function (list) {
     var entries = Array.from(list.children);
+    var originalPosition = new Map(entries.map(function (item, index) { return [item, index]; }));
     function impactFactor(item) {
       var meta = item.querySelector('.publication-meta');
       var match = meta && meta.textContent.match(/\bIF\s*([\d.]+)/);
       return match ? Number(match[1]) : -1;
     }
 
-    entries.sort(function (a, b) {
-      return impactFactor(a) - impactFactor(b);
+    entries.slice().sort(function (a, b) {
+      return impactFactor(a) - impactFactor(b) || originalPosition.get(a) - originalPosition.get(b);
     }).forEach(function (item, index) {
       item.dataset.number = index + 1;
     });
 
     entries.sort(function (a, b) {
-      return impactFactor(b) - impactFactor(a);
+      return impactFactor(b) - impactFactor(a) || originalPosition.get(a) - originalPosition.get(b);
     }).forEach(function (item) { list.appendChild(item); });
   });
 });
