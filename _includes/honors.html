@@ -4,7 +4,7 @@
   {% for entry in site.data.honors %}
     <li class="media">
       {% for icon in entry.Icons %}<img src="{{ icon | relative_url }}" class="mr-3" alt="" style="width:50px;height:50px;object-fit:contain;">{% endfor %}
-      {% if entry.Icon %}<img src="{{ entry.Icon | relative_url }}" class="mr-3" alt="" style="width:50px;height:50px;object-fit:contain;">{% endif %}
+      {% if entry.Icon %}{% if entry.Icon contains "education-cropped.jpg" %}<img src="{{ entry.Icon | relative_url }}" class="mr-3" alt="Ministry of Education" style="width:140px;height:60px;object-fit:contain;">{% elsif entry.Icon contains "korean-association-basic-medical-scientists-cropped.png" %}<img src="{{ entry.Icon | relative_url }}" class="mr-3" alt="Korean Association of Basic Medical Scientists" style="width:180px;height:45px;object-fit:contain;">{% elsif entry.Icon contains "japanese-society-public-health-cropped.jpg" %}<img src="{{ entry.Icon | relative_url }}" class="mr-3" alt="Japanese Society of Public Health" style="width:140px;height:52px;object-fit:contain;">{% else %}<img src="{{ entry.Icon | relative_url }}" class="mr-3" alt="" style="width:50px;height:50px;object-fit:contain;">{% endif %}{% endif %}
       <div class="media-body">
         <h5 style="font-family:{{ theme.education-entry-font}};font-size:{{ theme.education-entry-size }};color:{{theme.education-font-color}};">{{ entry.Title }}{% if entry.Image %} <a href="{{ entry.Image }}" target="_blank" style="font-size:0.75em;">[view]</a>{% endif %}</h5>
         <p style="font-family:{{ theme.education-entry-font}};font-size:{{ theme.education-section-size }};color:{{theme.education-font-color}};"><i>{{ entry.Organization }} ({{ entry.Year }})</i></p>
