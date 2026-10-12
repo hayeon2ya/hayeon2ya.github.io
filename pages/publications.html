@@ -153,10 +153,15 @@ document.addEventListener('DOMContentLoaded', function () {
       return aTitle.localeCompare(bTitle, 'en', { sensitivity: 'base' }) || originalPosition.get(a) - originalPosition.get(b);
     }
 
+    entries.slice().sort(function (a, b) {
+      return impactFactor(a) - impactFactor(b) || compareTitles(a, b);
+    }).forEach(function (item, index) {
+      item.dataset.number = index + 1;
+    });
+
     entries.sort(function (a, b) {
       return impactFactor(b) - impactFactor(a) || compareTitles(a, b);
     }).forEach(function (item, index) {
-      item.dataset.number = index + 1;
       list.appendChild(item);
     });
   });
