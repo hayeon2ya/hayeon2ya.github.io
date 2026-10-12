@@ -14,12 +14,12 @@ last-updated: 2020-10-30 5:55 PM
 
 <style>
 ol.bibliography {
-  counter-reset: bibcount 143;
+  counter-reset: bibcount 0;
   list-style: none;
   padding-left: 0;
 }
 ol.bibliography > li {
-  counter-increment: bibcount -1;
+  counter-increment: bibcount 1;
   display: flex;
   align-items: flex-start;
   margin-bottom: 1em;
@@ -33,4 +33,51 @@ ol.bibliography > li::before {
 }
 </style>
 
-{% bibliography -f papers %}
+<p class="text-center text-muted">Select a year. Papers are sorted by impact factor, highest first.</p>
+
+<ul class="nav nav-tabs justify-content-center mb-3" id="publication-year-tabs" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="year-2026-tab" data-toggle="tab" href="#year-2026" role="tab" aria-controls="year-2026" aria-selected="true">2026 ({% bibliography_count -f papers --query @*[year=2026] %})</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="year-2025-tab" data-toggle="tab" href="#year-2025" role="tab" aria-controls="year-2025" aria-selected="false">2025 ({% bibliography_count -f papers --query @*[year=2025] %})</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="year-2024-tab" data-toggle="tab" href="#year-2024" role="tab" aria-controls="year-2024" aria-selected="false">2024 ({% bibliography_count -f papers --query @*[year=2024] %})</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="year-2023-tab" data-toggle="tab" href="#year-2023" role="tab" aria-controls="year-2023" aria-selected="false">2023 ({% bibliography_count -f papers --query @*[year=2023] %})</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="publication-year-content">
+  <section class="tab-pane fade show active" id="year-2026" role="tabpanel" aria-labelledby="year-2026-tab">
+    {% bibliography -f papers --query @*[year=2026] %}
+  </section>
+  <section class="tab-pane fade" id="year-2025" role="tabpanel" aria-labelledby="year-2025-tab">
+    {% bibliography -f papers --query @*[year=2025] %}
+  </section>
+  <section class="tab-pane fade" id="year-2024" role="tabpanel" aria-labelledby="year-2024-tab">
+    {% bibliography -f papers --query @*[year=2024] %}
+  </section>
+  <section class="tab-pane fade" id="year-2023" role="tabpanel" aria-labelledby="year-2023-tab">
+    {% bibliography -f papers --query @*[year=2023] %}
+  </section>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('#publication-year-content ol.bibliography').forEach(function (list) {
+    Array.from(list.children)
+      .sort(function (a, b) {
+        function impactFactor(item) {
+          var meta = item.querySelector('.publication-meta');
+          var match = meta && meta.textContent.match(/\bIF\s*([\d.]+)/);
+          return match ? Number(match[1]) : -1;
+        }
+        return impactFactor(b) - impactFactor(a);
+      })
+      .forEach(function (item) { list.appendChild(item); });
+  });
+});
+</script>
