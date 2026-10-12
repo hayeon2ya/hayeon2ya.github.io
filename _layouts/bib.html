@@ -5,7 +5,7 @@
   {% if entry.type == "thesis" %}
     {{reference}}
   {% else %}
-    <div class="title font-weight-bold">{{entry.title}} <a href="https://pubmed.ncbi.nlm.nih.gov/?term={{ entry.title | uri_escape }}" class="btn btn-sm z-depth-0 publication-link-icon" role="button" target="_blank" rel="noopener noreferrer" aria-label="PubMed article link" title="PubMed article link"><i class="fas fa-link"></i></a></div>
+    <div class="title font-weight-bold">{{entry.title}} <a href="{% if entry.pmid %}https://pubmed.ncbi.nlm.nih.gov/{{ entry.pmid }}/{% else %}https://pubmed.ncbi.nlm.nih.gov/?term={{ entry.title | uri_escape }}{% endif %}" class="btn btn-sm z-depth-0 publication-link-icon" role="button" target="_blank" rel="noopener noreferrer" aria-label="PubMed article link" title="PubMed article link"><i class="fas fa-link"></i></a></div>
     <div class="author">
       {% for author in entry.author_array %}
         {% if forloop.length == 1 %}
