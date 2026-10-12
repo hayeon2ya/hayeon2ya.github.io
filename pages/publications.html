@@ -147,15 +147,20 @@ document.addEventListener('DOMContentLoaded', function () {
       var match = meta && meta.textContent.match(/\bIF\s*([\d.]+)/);
       return match ? Number(match[1]) : -1;
     }
+    function compareTitles(a, b) {
+      var aTitle = (a.querySelector('.title') || a).textContent.trim();
+      var bTitle = (b.querySelector('.title') || b).textContent.trim();
+      return aTitle.localeCompare(bTitle, 'en', { sensitivity: 'base' }) || originalPosition.get(a) - originalPosition.get(b);
+    }
 
     entries.slice().sort(function (a, b) {
-      return impactFactor(a) - impactFactor(b) || originalPosition.get(a) - originalPosition.get(b);
+      return impactFactor(a) - impactFactor(b) || compareTitles(a, b);
     }).forEach(function (item, index) {
       item.dataset.number = index + 1;
     });
 
     entries.sort(function (a, b) {
-      return impactFactor(b) - impactFactor(a) || originalPosition.get(a) - originalPosition.get(b);
+      return impactFactor(b) - impactFactor(a) || compareTitles(a, b);
     }).forEach(function (item) { list.appendChild(item); });
   });
 });
