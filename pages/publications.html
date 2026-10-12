@@ -42,25 +42,20 @@ ol.bibliography > li::before {
 <p class="text-center text-muted">Select ALL or a year. Papers are sorted by impact factor, highest first.</p>
 
 <div class="row text-center mb-4" id="publication-stats" aria-label="Publication statistics">
-  <div class="col-md-3 mb-2">
+  <div class="col-md-4 mb-2">
     <div class="card h-100"><div class="card-body">
-      <div class="h3 mb-1" data-stat="first">—</div>
-      <div>First author</div>
+      <div class="h3 mb-1" data-stat="first-corresponding">—</div>
+      <div>First / Corresponding</div>
+      <small class="text-muted">IF ≥ 10</small>
     </div></div>
   </div>
-  <div class="col-md-3 mb-2">
-    <div class="card h-100"><div class="card-body">
-      <div class="h3 mb-1" data-stat="corresponding">—</div>
-      <div>Corresponding author</div>
-    </div></div>
-  </div>
-  <div class="col-md-3 mb-2">
+  <div class="col-md-4 mb-2">
     <div class="card h-100"><div class="card-body">
       <div class="h3 mb-1" data-stat="coauthor">—</div>
       <div>Co-author</div>
     </div></div>
   </div>
-  <div class="col-md-3 mb-2">
+  <div class="col-md-4 mb-2">
     <div class="card h-100"><div class="card-body">
       <div class="h3 mb-1" data-stat="total">—</div>
       <div>Total publications</div>
@@ -117,13 +112,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var values = meta.textContent.split('·');
     var role = values[0].trim();
-    if (role === 'First') firstCount += 1;
-    if (role === 'Corresponding') correspondingCount += 1;
+    var impactFactorMatch = meta.textContent.match(/\bIF\s*([\d.]+)/);
+    var impactFactor = impactFactorMatch ? Number(impactFactorMatch[1]) : 0;
+    if (impactFactor >= 10 && role === 'First') firstCount += 1;
+    if (impactFactor >= 10 && role === 'Corresponding') correspondingCount += 1;
     if (role === 'Co-author') coauthorCount += 1;
   });
 
-  document.querySelector('[data-stat="first"]').textContent = firstCount;
-  document.querySelector('[data-stat="corresponding"]').textContent = correspondingCount;
+  document.querySelector('[data-stat="first-corresponding"]').textContent = firstCount + '/' + correspondingCount;
   document.querySelector('[data-stat="coauthor"]').textContent = coauthorCount;
   document.querySelector('[data-stat="total"]').textContent = allEntries.length;
 
