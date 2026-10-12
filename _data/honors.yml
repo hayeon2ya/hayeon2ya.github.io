@@ -8,9 +8,10 @@
   Year: 2025
 - Title: Samil Scholarships
   Organization: The Samil Foundation
+  Icon: /assets/img/icons/samil.png
   Year: 2025
 - Title: Korea Talent Award
-  Icon: /assets/img/icons/korea-talent-award.png
+  Icon: /assets/img/icons/education.jpg
   Organization: Awarded by the Deputy Prime Minister and Minister of Education, Republic
     of Korea
   Year: 2024
@@ -24,6 +25,7 @@
   Year: 2024
 - Title: Samil Scholarships
   Organization: The Samil Foundation
+  Icon: /assets/img/icons/samil.png
   Year: 2024
 - Title: International Participants Award
   Organization: The 83rd Conference of Japanese Society of Public Health
