@@ -56,6 +56,24 @@ layout: default
 <!-- style="font-family:{{ theme.link-font }};background-color:{{ theme.nav-color }}; -->
 
 <!-- HOME HIGHLIGHTS SECTION --> 
+<style>
+#publications ol.bibliography {
+  list-style: none;
+  padding-left: 0;
+}
+#publications ol.bibliography > li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1em;
+}
+#publications ol.bibliography > li::before {
+  content: attr(data-number) ".";
+  font-weight: bold;
+  margin-right: 0.75em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+</style>
 {% if site.animate %}
 <div class="card mx-auto animate__animated animate__slideInUp animate__delay-1s glowing-border" style="max-width: 100%;">
 {% else %}
@@ -72,6 +90,25 @@ layout: default
               <div class="tab-pane active overflow-auto" id="{{section.id}}" role="tabpanel">
                 <p><i>{{section.description}}</i></p>
                 {% bibliography -f papers --query @*[selected=true] %}
+                <script>
+                  (function () {
+                    var list = document.querySelector('#publications ol.bibliography');
+                    if (!list) return;
+                    var entries = Array.from(list.children);
+                    var originalPosition = new Map(entries.map(function (item, index) { return [item, index]; }));
+                    function impactFactor(item) {
+                      var meta = item.querySelector('.publication-meta');
+                      var match = meta && meta.textContent.match(/\bIF\s*([\d.]+)/);
+                      return match ? Number(match[1]) : -1;
+                    }
+                    entries.sort(function (a, b) {
+                      return impactFactor(b) - impactFactor(a) || originalPosition.get(a) - originalPosition.get(b);
+                    }).forEach(function (item, index, sortedEntries) {
+                      item.dataset.number = sortedEntries.length - index;
+                      list.appendChild(item);
+                    });
+                  })();
+                </script>
                 <p><a href="/publications.html">View full publication list</a></p>
               </div>
             {% else %}
