@@ -33,10 +33,10 @@ gitalk_repo: null
 gitalk_owner: null
 gitalk_admin: null
 gitalk_distraction_mode: false
-nav-color: '#00334e'
-footer-color: '#00334e'
-color-scheme: '#00334e'
-card-color: '#00334e'
+nav-color: '#ff9800'
+footer-color: '#ff9800'
+color-scheme: '#ff9800'
+card-color: '#ff9800'
 nav-dIcon: fas fa-caret-down
 animate: true
 home_option: education

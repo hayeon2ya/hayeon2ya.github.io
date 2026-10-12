@@ -292,11 +292,11 @@ a.highlighted:hover {
 }
 
 .resp-sharing-button--xing {
-  background-color: #1a7576
+  background-color: #ff9800
 }
 
 .resp-sharing-button--xing:hover {
-  background-color: #114c4c
+  background-color: #d97706
 }
 
 .resp-sharing-button--whatsapp {
@@ -614,6 +614,13 @@ a:link {color: #ff9800;}      /* unvisited link */
 a:visited {color: #ff9800;}   /* visited link */
 a:hover {color: #ff9800; text-decoration: underline;}     /* mouse over link */
 a:active {color: #ff9800;}    /* selected link */
+
+.title .publication-link-icon,
+.title .publication-link-icon:visited,
+.title .publication-link-icon:hover,
+.title .publication-link-icon:active {
+  color: #ff9800 !important;
+}
 
 
 
